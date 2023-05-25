@@ -3,8 +3,6 @@
 
 package org.nofs.net.proto;
 
-import org.nofs.org.nofs;
-
 public final class RegionSimpleInfoOuterClass {
   private RegionSimpleInfoOuterClass() {}
   public static void registerAllExtensions(
@@ -24,7 +22,7 @@ public final class RegionSimpleInfoOuterClass {
      * <code>string name = 1;</code>
      * @return The name.
      */
-    String getName();
+    java.lang.String getName();
     /**
      * <code>string name = 1;</code>
      * @return The bytes for name.
@@ -36,7 +34,7 @@ public final class RegionSimpleInfoOuterClass {
      * <code>string title = 2;</code>
      * @return The title.
      */
-    String getTitle();
+    java.lang.String getTitle();
     /**
      * <code>string title = 2;</code>
      * @return The bytes for title.
@@ -48,7 +46,7 @@ public final class RegionSimpleInfoOuterClass {
      * <code>string type = 3;</code>
      * @return The type.
      */
-    String getType();
+    java.lang.String getType();
     /**
      * <code>string type = 3;</code>
      * @return The bytes for type.
@@ -60,7 +58,7 @@ public final class RegionSimpleInfoOuterClass {
      * <code>string dispatch_url = 4;</code>
      * @return The dispatchUrl.
      */
-    String getDispatchUrl();
+    java.lang.String getDispatchUrl();
     /**
      * <code>string dispatch_url = 4;</code>
      * @return The bytes for dispatchUrl.
@@ -87,42 +85,42 @@ public final class RegionSimpleInfoOuterClass {
       dispatchUrl_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new RegionSimpleInfo();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.nofs.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_descriptor;
+      return org.nofs.net.proto.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_descriptor;
     }
 
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.nofs.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_fieldAccessorTable
+      return org.nofs.net.proto.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.class, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder.class);
+              org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.class, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder.class);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
-    private volatile Object name_ = "";
+    private volatile java.lang.Object name_ = "";
     /**
      * <code>string name = 1;</code>
      * @return The name.
      */
-    @Override
-    public String getName() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         name_ = s;
         return s;
       }
@@ -131,14 +129,14 @@ public final class RegionSimpleInfoOuterClass {
      * <code>string name = 1;</code>
      * @return The bytes for name.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
-      if (ref instanceof String) {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -148,20 +146,20 @@ public final class RegionSimpleInfoOuterClass {
 
     public static final int TITLE_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
-    private volatile Object title_ = "";
+    private volatile java.lang.Object title_ = "";
     /**
      * <code>string title = 2;</code>
      * @return The title.
      */
-    @Override
-    public String getTitle() {
-      Object ref = title_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getTitle() {
+      java.lang.Object ref = title_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         title_ = s;
         return s;
       }
@@ -170,14 +168,14 @@ public final class RegionSimpleInfoOuterClass {
      * <code>string title = 2;</code>
      * @return The bytes for title.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getTitleBytes() {
-      Object ref = title_;
-      if (ref instanceof String) {
+      java.lang.Object ref = title_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         title_ = b;
         return b;
       } else {
@@ -187,20 +185,20 @@ public final class RegionSimpleInfoOuterClass {
 
     public static final int TYPE_FIELD_NUMBER = 3;
     @SuppressWarnings("serial")
-    private volatile Object type_ = "";
+    private volatile java.lang.Object type_ = "";
     /**
      * <code>string type = 3;</code>
      * @return The type.
      */
-    @Override
-    public String getType() {
-      Object ref = type_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getType() {
+      java.lang.Object ref = type_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         type_ = s;
         return s;
       }
@@ -209,14 +207,14 @@ public final class RegionSimpleInfoOuterClass {
      * <code>string type = 3;</code>
      * @return The bytes for type.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getTypeBytes() {
-      Object ref = type_;
-      if (ref instanceof String) {
+      java.lang.Object ref = type_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         type_ = b;
         return b;
       } else {
@@ -226,20 +224,20 @@ public final class RegionSimpleInfoOuterClass {
 
     public static final int DISPATCH_URL_FIELD_NUMBER = 4;
     @SuppressWarnings("serial")
-    private volatile Object dispatchUrl_ = "";
+    private volatile java.lang.Object dispatchUrl_ = "";
     /**
      * <code>string dispatch_url = 4;</code>
      * @return The dispatchUrl.
      */
-    @Override
-    public String getDispatchUrl() {
-      Object ref = dispatchUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getDispatchUrl() {
+      java.lang.Object ref = dispatchUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         dispatchUrl_ = s;
         return s;
       }
@@ -248,14 +246,14 @@ public final class RegionSimpleInfoOuterClass {
      * <code>string dispatch_url = 4;</code>
      * @return The bytes for dispatchUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDispatchUrlBytes() {
-      Object ref = dispatchUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = dispatchUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         dispatchUrl_ = b;
         return b;
       } else {
@@ -264,7 +262,7 @@ public final class RegionSimpleInfoOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -274,7 +272,7 @@ public final class RegionSimpleInfoOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
@@ -292,7 +290,7 @@ public final class RegionSimpleInfoOuterClass {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -315,15 +313,15 @@ public final class RegionSimpleInfoOuterClass {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo)) {
+      if (!(obj instanceof org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo)) {
         return super.equals(obj);
       }
-      org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo other = (org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo) obj;
+      org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo other = (org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo) obj;
 
       if (!getName()
           .equals(other.getName())) return false;
@@ -337,7 +335,7 @@ public final class RegionSimpleInfoOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -357,44 +355,44 @@ public final class RegionSimpleInfoOuterClass {
       return hash;
     }
 
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(byte[] data)
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -402,26 +400,26 @@ public final class RegionSimpleInfoOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseDelimitedFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseDelimitedFrom(
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -429,21 +427,21 @@ public final class RegionSimpleInfoOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo prototype) {
+    public static Builder newBuilder(org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -455,21 +453,21 @@ public final class RegionSimpleInfoOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:RegionSimpleInfo)
-        org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder {
+        org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.nofs.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_descriptor;
+        return org.nofs.net.proto.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.nofs.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_fieldAccessorTable
+        return org.nofs.net.proto.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.class, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder.class);
+                org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.class, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder.class);
       }
 
-      // Construct using org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.newBuilder()
+      // Construct using org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.newBuilder()
       private Builder() {
 
       }
@@ -479,7 +477,7 @@ public final class RegionSimpleInfoOuterClass {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -490,35 +488,35 @@ public final class RegionSimpleInfoOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.nofs.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_descriptor;
+        return org.nofs.net.proto.RegionSimpleInfoOuterClass.internal_static_RegionSimpleInfo_descriptor;
       }
 
-      @Override
-      public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo getDefaultInstanceForType() {
-        return org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.getDefaultInstance();
+      @java.lang.Override
+      public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo getDefaultInstanceForType() {
+        return org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.getDefaultInstance();
       }
 
-      @Override
-      public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo build() {
-        org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo result = buildPartial();
+      @java.lang.Override
+      public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo build() {
+        org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo buildPartial() {
-        org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo result = new org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo(this);
+      @java.lang.Override
+      public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo buildPartial() {
+        org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo result = new org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo result) {
+      private void buildPartial0(org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.name_ = name_;
@@ -534,18 +532,18 @@ public final class RegionSimpleInfoOuterClass {
         }
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo) {
-          return mergeFrom((org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo)other);
+        if (other instanceof org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo) {
+          return mergeFrom((org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo other) {
-        if (other == org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo other) {
+        if (other == org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.getDefaultInstance()) return this;
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           bitField0_ |= 0x00000001;
@@ -571,18 +569,18 @@ public final class RegionSimpleInfoOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -629,21 +627,21 @@ public final class RegionSimpleInfoOuterClass {
       }
       private int bitField0_;
 
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       /**
        * <code>string name = 1;</code>
        * @return The name.
        */
-      public String getName() {
-        Object ref = name_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           name_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -652,11 +650,11 @@ public final class RegionSimpleInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -669,7 +667,7 @@ public final class RegionSimpleInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setName(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         name_ = value;
         bitField0_ |= 0x00000001;
@@ -701,21 +699,21 @@ public final class RegionSimpleInfoOuterClass {
         return this;
       }
 
-      private Object title_ = "";
+      private java.lang.Object title_ = "";
       /**
        * <code>string title = 2;</code>
        * @return The title.
        */
-      public String getTitle() {
-        Object ref = title_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getTitle() {
+        java.lang.Object ref = title_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           title_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -724,11 +722,11 @@ public final class RegionSimpleInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getTitleBytes() {
-        Object ref = title_;
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           title_ = b;
           return b;
         } else {
@@ -741,7 +739,7 @@ public final class RegionSimpleInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setTitle(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         title_ = value;
         bitField0_ |= 0x00000002;
@@ -773,21 +771,21 @@ public final class RegionSimpleInfoOuterClass {
         return this;
       }
 
-      private Object type_ = "";
+      private java.lang.Object type_ = "";
       /**
        * <code>string type = 3;</code>
        * @return The type.
        */
-      public String getType() {
-        Object ref = type_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getType() {
+        java.lang.Object ref = type_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           type_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -796,11 +794,11 @@ public final class RegionSimpleInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getTypeBytes() {
-        Object ref = type_;
+        java.lang.Object ref = type_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           type_ = b;
           return b;
         } else {
@@ -813,7 +811,7 @@ public final class RegionSimpleInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setType(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         type_ = value;
         bitField0_ |= 0x00000004;
@@ -845,21 +843,21 @@ public final class RegionSimpleInfoOuterClass {
         return this;
       }
 
-      private Object dispatchUrl_ = "";
+      private java.lang.Object dispatchUrl_ = "";
       /**
        * <code>string dispatch_url = 4;</code>
        * @return The dispatchUrl.
        */
-      public String getDispatchUrl() {
-        Object ref = dispatchUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getDispatchUrl() {
+        java.lang.Object ref = dispatchUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           dispatchUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -868,11 +866,11 @@ public final class RegionSimpleInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getDispatchUrlBytes() {
-        Object ref = dispatchUrl_;
+        java.lang.Object ref = dispatchUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           dispatchUrl_ = b;
           return b;
         } else {
@@ -885,7 +883,7 @@ public final class RegionSimpleInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setDispatchUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         dispatchUrl_ = value;
         bitField0_ |= 0x00000008;
@@ -916,13 +914,13 @@ public final class RegionSimpleInfoOuterClass {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -933,18 +931,18 @@ public final class RegionSimpleInfoOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:RegionSimpleInfo)
-    private static final org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo DEFAULT_INSTANCE;
+    private static final org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo();
+      DEFAULT_INSTANCE = new org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo();
     }
 
-    public static org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo getDefaultInstance() {
+    public static org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<RegionSimpleInfo>
         PARSER = new com.google.protobuf.AbstractParser<RegionSimpleInfo>() {
-      @Override
+      @java.lang.Override
       public RegionSimpleInfo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -968,13 +966,13 @@ public final class RegionSimpleInfoOuterClass {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<RegionSimpleInfo> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo getDefaultInstanceForType() {
+    @java.lang.Override
+    public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -993,11 +991,11 @@ public final class RegionSimpleInfoOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\026RegionSimpleInfo.proto\"S\n\020RegionSimple" +
       "Info\022\014\n\004name\030\001 \001(\t\022\r\n\005title\030\002 \001(\t\022\014\n\004typ" +
-      "e\030\003 \001(\t\022\024\n\014dispatch_url\030\004 \001(\tB\013\n\tsdkserv" +
-      "erb\006proto3"
+      "e\030\003 \001(\t\022\024\n\014dispatch_url\030\004 \001(\tB\024\n\022org.nof" +
+      "s.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1008,7 +1006,7 @@ public final class RegionSimpleInfoOuterClass {
     internal_static_RegionSimpleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RegionSimpleInfo_descriptor,
-        new String[] { "Name", "Title", "Type", "DispatchUrl", });
+        new java.lang.String[] { "Name", "Title", "Type", "DispatchUrl", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

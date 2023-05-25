@@ -3,8 +3,6 @@
 
 package org.nofs.net.proto;
 
-import org.nofs.org.nofs;
-
 public final class RegionInfoOuterClass {
   private RegionInfoOuterClass() {}
   public static void registerAllExtensions(
@@ -24,7 +22,7 @@ public final class RegionInfoOuterClass {
      * <code>string gateserver_ip = 1;</code>
      * @return The gateserverIp.
      */
-    String getGateserverIp();
+    java.lang.String getGateserverIp();
     /**
      * <code>string gateserver_ip = 1;</code>
      * @return The bytes for gateserverIp.
@@ -42,7 +40,7 @@ public final class RegionInfoOuterClass {
      * <code>string pay_callback_url = 3;</code>
      * @return The payCallbackUrl.
      */
-    String getPayCallbackUrl();
+    java.lang.String getPayCallbackUrl();
     /**
      * <code>string pay_callback_url = 3;</code>
      * @return The bytes for payCallbackUrl.
@@ -54,7 +52,7 @@ public final class RegionInfoOuterClass {
      * <code>string area_type = 7;</code>
      * @return The areaType.
      */
-    String getAreaType();
+    java.lang.String getAreaType();
     /**
      * <code>string area_type = 7;</code>
      * @return The bytes for areaType.
@@ -66,7 +64,7 @@ public final class RegionInfoOuterClass {
      * <code>string resource_url = 8;</code>
      * @return The resourceUrl.
      */
-    String getResourceUrl();
+    java.lang.String getResourceUrl();
     /**
      * <code>string resource_url = 8;</code>
      * @return The bytes for resourceUrl.
@@ -78,7 +76,7 @@ public final class RegionInfoOuterClass {
      * <code>string data_url = 9;</code>
      * @return The dataUrl.
      */
-    String getDataUrl();
+    java.lang.String getDataUrl();
     /**
      * <code>string data_url = 9;</code>
      * @return The bytes for dataUrl.
@@ -90,7 +88,7 @@ public final class RegionInfoOuterClass {
      * <code>string feedback_url = 10;</code>
      * @return The feedbackUrl.
      */
-    String getFeedbackUrl();
+    java.lang.String getFeedbackUrl();
     /**
      * <code>string feedback_url = 10;</code>
      * @return The bytes for feedbackUrl.
@@ -102,7 +100,7 @@ public final class RegionInfoOuterClass {
      * <code>string bulletin_url = 11;</code>
      * @return The bulletinUrl.
      */
-    String getBulletinUrl();
+    java.lang.String getBulletinUrl();
     /**
      * <code>string bulletin_url = 11;</code>
      * @return The bytes for bulletinUrl.
@@ -114,7 +112,7 @@ public final class RegionInfoOuterClass {
      * <code>string resource_url_bak = 12;</code>
      * @return The resourceUrlBak.
      */
-    String getResourceUrlBak();
+    java.lang.String getResourceUrlBak();
     /**
      * <code>string resource_url_bak = 12;</code>
      * @return The bytes for resourceUrlBak.
@@ -126,7 +124,7 @@ public final class RegionInfoOuterClass {
      * <code>string data_url_bak = 13;</code>
      * @return The dataUrlBak.
      */
-    String getDataUrlBak();
+    java.lang.String getDataUrlBak();
     /**
      * <code>string data_url_bak = 13;</code>
      * @return The bytes for dataUrlBak.
@@ -144,7 +142,7 @@ public final class RegionInfoOuterClass {
      * <code>string handbook_url = 16;</code>
      * @return The handbookUrl.
      */
-    String getHandbookUrl();
+    java.lang.String getHandbookUrl();
     /**
      * <code>string handbook_url = 16;</code>
      * @return The bytes for handbookUrl.
@@ -162,7 +160,7 @@ public final class RegionInfoOuterClass {
      * <code>string client_data_md5 = 19;</code>
      * @return The clientDataMd5.
      */
-    String getClientDataMd5();
+    java.lang.String getClientDataMd5();
     /**
      * <code>string client_data_md5 = 19;</code>
      * @return The bytes for clientDataMd5.
@@ -174,7 +172,7 @@ public final class RegionInfoOuterClass {
      * <code>string client_silence_data_md5 = 20;</code>
      * @return The clientSilenceDataMd5.
      */
-    String getClientSilenceDataMd5();
+    java.lang.String getClientSilenceDataMd5();
     /**
      * <code>string client_silence_data_md5 = 20;</code>
      * @return The bytes for clientSilenceDataMd5.
@@ -191,11 +189,11 @@ public final class RegionInfoOuterClass {
      * <code>.ResVersionConfig res_version_config = 22;</code>
      * @return The resVersionConfig.
      */
-    org.nofs.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig();
+    org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig();
     /**
      * <code>.ResVersionConfig res_version_config = 22;</code>
      */
-    org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder();
+    org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder();
 
     /**
      * <code>bytes secret_key = 23;</code>
@@ -207,7 +205,7 @@ public final class RegionInfoOuterClass {
      * <code>string official_community_url = 24;</code>
      * @return The officialCommunityUrl.
      */
-    String getOfficialCommunityUrl();
+    java.lang.String getOfficialCommunityUrl();
     /**
      * <code>string official_community_url = 24;</code>
      * @return The bytes for officialCommunityUrl.
@@ -219,7 +217,7 @@ public final class RegionInfoOuterClass {
      * <code>string client_version_suffix = 26;</code>
      * @return The clientVersionSuffix.
      */
-    String getClientVersionSuffix();
+    java.lang.String getClientVersionSuffix();
     /**
      * <code>string client_version_suffix = 26;</code>
      * @return The bytes for clientVersionSuffix.
@@ -231,7 +229,7 @@ public final class RegionInfoOuterClass {
      * <code>string client_silence_version_suffix = 27;</code>
      * @return The clientSilenceVersionSuffix.
      */
-    String getClientSilenceVersionSuffix();
+    java.lang.String getClientSilenceVersionSuffix();
     /**
      * <code>string client_silence_version_suffix = 27;</code>
      * @return The bytes for clientSilenceVersionSuffix.
@@ -249,7 +247,7 @@ public final class RegionInfoOuterClass {
      * <code>string gateserver_domain_name = 29;</code>
      * @return The gateserverDomainName.
      */
-    String getGateserverDomainName();
+    java.lang.String getGateserverDomainName();
     /**
      * <code>string gateserver_domain_name = 29;</code>
      * @return The bytes for gateserverDomainName.
@@ -261,7 +259,7 @@ public final class RegionInfoOuterClass {
      * <code>string user_center_url = 30;</code>
      * @return The userCenterUrl.
      */
-    String getUserCenterUrl();
+    java.lang.String getUserCenterUrl();
     /**
      * <code>string user_center_url = 30;</code>
      * @return The bytes for userCenterUrl.
@@ -273,7 +271,7 @@ public final class RegionInfoOuterClass {
      * <code>string account_bind_url = 31;</code>
      * @return The accountBindUrl.
      */
-    String getAccountBindUrl();
+    java.lang.String getAccountBindUrl();
     /**
      * <code>string account_bind_url = 31;</code>
      * @return The bytes for accountBindUrl.
@@ -285,7 +283,7 @@ public final class RegionInfoOuterClass {
      * <code>string cdkey_url = 32;</code>
      * @return The cdkeyUrl.
      */
-    String getCdkeyUrl();
+    java.lang.String getCdkeyUrl();
     /**
      * <code>string cdkey_url = 32;</code>
      * @return The bytes for cdkeyUrl.
@@ -297,7 +295,7 @@ public final class RegionInfoOuterClass {
      * <code>string privacy_policy_url = 33;</code>
      * @return The privacyPolicyUrl.
      */
-    String getPrivacyPolicyUrl();
+    java.lang.String getPrivacyPolicyUrl();
     /**
      * <code>string privacy_policy_url = 33;</code>
      * @return The bytes for privacyPolicyUrl.
@@ -309,7 +307,7 @@ public final class RegionInfoOuterClass {
      * <code>string next_resource_url = 34;</code>
      * @return The nextResourceUrl.
      */
-    String getNextResourceUrl();
+    java.lang.String getNextResourceUrl();
     /**
      * <code>string next_resource_url = 34;</code>
      * @return The bytes for nextResourceUrl.
@@ -326,17 +324,17 @@ public final class RegionInfoOuterClass {
      * <code>.ResVersionConfig next_res_version_config = 35;</code>
      * @return The nextResVersionConfig.
      */
-    org.nofs.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig();
+    org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig();
     /**
      * <code>.ResVersionConfig next_res_version_config = 35;</code>
      */
-    org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder();
+    org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder();
 
     /**
      * <code>string game_biz = 36;</code>
      * @return The gameBiz.
      */
-    String getGameBiz();
+    java.lang.String getGameBiz();
     /**
      * <code>string game_biz = 36;</code>
      * @return The bytes for gameBiz.
@@ -382,42 +380,42 @@ public final class RegionInfoOuterClass {
       gameBiz_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new RegionInfo();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.nofs.RegionInfoOuterClass.internal_static_RegionInfo_descriptor;
+      return org.nofs.net.proto.RegionInfoOuterClass.internal_static_RegionInfo_descriptor;
     }
 
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.nofs.RegionInfoOuterClass.internal_static_RegionInfo_fieldAccessorTable
+      return org.nofs.net.proto.RegionInfoOuterClass.internal_static_RegionInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.nofs.RegionInfoOuterClass.RegionInfo.class, org.nofs.RegionInfoOuterClass.RegionInfo.Builder.class);
+              org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.class, org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.Builder.class);
     }
 
     public static final int GATESERVER_IP_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
-    private volatile Object gateserverIp_ = "";
+    private volatile java.lang.Object gateserverIp_ = "";
     /**
      * <code>string gateserver_ip = 1;</code>
      * @return The gateserverIp.
      */
-    @Override
-    public String getGateserverIp() {
-      Object ref = gateserverIp_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getGateserverIp() {
+      java.lang.Object ref = gateserverIp_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         gateserverIp_ = s;
         return s;
       }
@@ -426,14 +424,14 @@ public final class RegionInfoOuterClass {
      * <code>string gateserver_ip = 1;</code>
      * @return The bytes for gateserverIp.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getGateserverIpBytes() {
-      Object ref = gateserverIp_;
-      if (ref instanceof String) {
+      java.lang.Object ref = gateserverIp_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         gateserverIp_ = b;
         return b;
       } else {
@@ -447,27 +445,27 @@ public final class RegionInfoOuterClass {
      * <code>uint32 gateserver_port = 2;</code>
      * @return The gateserverPort.
      */
-    @Override
+    @java.lang.Override
     public int getGateserverPort() {
       return gateserverPort_;
     }
 
     public static final int PAY_CALLBACK_URL_FIELD_NUMBER = 3;
     @SuppressWarnings("serial")
-    private volatile Object payCallbackUrl_ = "";
+    private volatile java.lang.Object payCallbackUrl_ = "";
     /**
      * <code>string pay_callback_url = 3;</code>
      * @return The payCallbackUrl.
      */
-    @Override
-    public String getPayCallbackUrl() {
-      Object ref = payCallbackUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getPayCallbackUrl() {
+      java.lang.Object ref = payCallbackUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         payCallbackUrl_ = s;
         return s;
       }
@@ -476,14 +474,14 @@ public final class RegionInfoOuterClass {
      * <code>string pay_callback_url = 3;</code>
      * @return The bytes for payCallbackUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getPayCallbackUrlBytes() {
-      Object ref = payCallbackUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = payCallbackUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         payCallbackUrl_ = b;
         return b;
       } else {
@@ -493,20 +491,20 @@ public final class RegionInfoOuterClass {
 
     public static final int AREA_TYPE_FIELD_NUMBER = 7;
     @SuppressWarnings("serial")
-    private volatile Object areaType_ = "";
+    private volatile java.lang.Object areaType_ = "";
     /**
      * <code>string area_type = 7;</code>
      * @return The areaType.
      */
-    @Override
-    public String getAreaType() {
-      Object ref = areaType_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getAreaType() {
+      java.lang.Object ref = areaType_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         areaType_ = s;
         return s;
       }
@@ -515,14 +513,14 @@ public final class RegionInfoOuterClass {
      * <code>string area_type = 7;</code>
      * @return The bytes for areaType.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAreaTypeBytes() {
-      Object ref = areaType_;
-      if (ref instanceof String) {
+      java.lang.Object ref = areaType_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         areaType_ = b;
         return b;
       } else {
@@ -532,20 +530,20 @@ public final class RegionInfoOuterClass {
 
     public static final int RESOURCE_URL_FIELD_NUMBER = 8;
     @SuppressWarnings("serial")
-    private volatile Object resourceUrl_ = "";
+    private volatile java.lang.Object resourceUrl_ = "";
     /**
      * <code>string resource_url = 8;</code>
      * @return The resourceUrl.
      */
-    @Override
-    public String getResourceUrl() {
-      Object ref = resourceUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getResourceUrl() {
+      java.lang.Object ref = resourceUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         resourceUrl_ = s;
         return s;
       }
@@ -554,14 +552,14 @@ public final class RegionInfoOuterClass {
      * <code>string resource_url = 8;</code>
      * @return The bytes for resourceUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getResourceUrlBytes() {
-      Object ref = resourceUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = resourceUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         resourceUrl_ = b;
         return b;
       } else {
@@ -571,20 +569,20 @@ public final class RegionInfoOuterClass {
 
     public static final int DATA_URL_FIELD_NUMBER = 9;
     @SuppressWarnings("serial")
-    private volatile Object dataUrl_ = "";
+    private volatile java.lang.Object dataUrl_ = "";
     /**
      * <code>string data_url = 9;</code>
      * @return The dataUrl.
      */
-    @Override
-    public String getDataUrl() {
-      Object ref = dataUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getDataUrl() {
+      java.lang.Object ref = dataUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         dataUrl_ = s;
         return s;
       }
@@ -593,14 +591,14 @@ public final class RegionInfoOuterClass {
      * <code>string data_url = 9;</code>
      * @return The bytes for dataUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDataUrlBytes() {
-      Object ref = dataUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = dataUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         dataUrl_ = b;
         return b;
       } else {
@@ -610,20 +608,20 @@ public final class RegionInfoOuterClass {
 
     public static final int FEEDBACK_URL_FIELD_NUMBER = 10;
     @SuppressWarnings("serial")
-    private volatile Object feedbackUrl_ = "";
+    private volatile java.lang.Object feedbackUrl_ = "";
     /**
      * <code>string feedback_url = 10;</code>
      * @return The feedbackUrl.
      */
-    @Override
-    public String getFeedbackUrl() {
-      Object ref = feedbackUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getFeedbackUrl() {
+      java.lang.Object ref = feedbackUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         feedbackUrl_ = s;
         return s;
       }
@@ -632,14 +630,14 @@ public final class RegionInfoOuterClass {
      * <code>string feedback_url = 10;</code>
      * @return The bytes for feedbackUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getFeedbackUrlBytes() {
-      Object ref = feedbackUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = feedbackUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         feedbackUrl_ = b;
         return b;
       } else {
@@ -649,20 +647,20 @@ public final class RegionInfoOuterClass {
 
     public static final int BULLETIN_URL_FIELD_NUMBER = 11;
     @SuppressWarnings("serial")
-    private volatile Object bulletinUrl_ = "";
+    private volatile java.lang.Object bulletinUrl_ = "";
     /**
      * <code>string bulletin_url = 11;</code>
      * @return The bulletinUrl.
      */
-    @Override
-    public String getBulletinUrl() {
-      Object ref = bulletinUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getBulletinUrl() {
+      java.lang.Object ref = bulletinUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         bulletinUrl_ = s;
         return s;
       }
@@ -671,14 +669,14 @@ public final class RegionInfoOuterClass {
      * <code>string bulletin_url = 11;</code>
      * @return The bytes for bulletinUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getBulletinUrlBytes() {
-      Object ref = bulletinUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = bulletinUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         bulletinUrl_ = b;
         return b;
       } else {
@@ -688,20 +686,20 @@ public final class RegionInfoOuterClass {
 
     public static final int RESOURCE_URL_BAK_FIELD_NUMBER = 12;
     @SuppressWarnings("serial")
-    private volatile Object resourceUrlBak_ = "";
+    private volatile java.lang.Object resourceUrlBak_ = "";
     /**
      * <code>string resource_url_bak = 12;</code>
      * @return The resourceUrlBak.
      */
-    @Override
-    public String getResourceUrlBak() {
-      Object ref = resourceUrlBak_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getResourceUrlBak() {
+      java.lang.Object ref = resourceUrlBak_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         resourceUrlBak_ = s;
         return s;
       }
@@ -710,14 +708,14 @@ public final class RegionInfoOuterClass {
      * <code>string resource_url_bak = 12;</code>
      * @return The bytes for resourceUrlBak.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getResourceUrlBakBytes() {
-      Object ref = resourceUrlBak_;
-      if (ref instanceof String) {
+      java.lang.Object ref = resourceUrlBak_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         resourceUrlBak_ = b;
         return b;
       } else {
@@ -727,20 +725,20 @@ public final class RegionInfoOuterClass {
 
     public static final int DATA_URL_BAK_FIELD_NUMBER = 13;
     @SuppressWarnings("serial")
-    private volatile Object dataUrlBak_ = "";
+    private volatile java.lang.Object dataUrlBak_ = "";
     /**
      * <code>string data_url_bak = 13;</code>
      * @return The dataUrlBak.
      */
-    @Override
-    public String getDataUrlBak() {
-      Object ref = dataUrlBak_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getDataUrlBak() {
+      java.lang.Object ref = dataUrlBak_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         dataUrlBak_ = s;
         return s;
       }
@@ -749,14 +747,14 @@ public final class RegionInfoOuterClass {
      * <code>string data_url_bak = 13;</code>
      * @return The bytes for dataUrlBak.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDataUrlBakBytes() {
-      Object ref = dataUrlBak_;
-      if (ref instanceof String) {
+      java.lang.Object ref = dataUrlBak_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         dataUrlBak_ = b;
         return b;
       } else {
@@ -770,27 +768,27 @@ public final class RegionInfoOuterClass {
      * <code>uint32 client_data_version = 14;</code>
      * @return The clientDataVersion.
      */
-    @Override
+    @java.lang.Override
     public int getClientDataVersion() {
       return clientDataVersion_;
     }
 
     public static final int HANDBOOK_URL_FIELD_NUMBER = 16;
     @SuppressWarnings("serial")
-    private volatile Object handbookUrl_ = "";
+    private volatile java.lang.Object handbookUrl_ = "";
     /**
      * <code>string handbook_url = 16;</code>
      * @return The handbookUrl.
      */
-    @Override
-    public String getHandbookUrl() {
-      Object ref = handbookUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getHandbookUrl() {
+      java.lang.Object ref = handbookUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         handbookUrl_ = s;
         return s;
       }
@@ -799,14 +797,14 @@ public final class RegionInfoOuterClass {
      * <code>string handbook_url = 16;</code>
      * @return The bytes for handbookUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getHandbookUrlBytes() {
-      Object ref = handbookUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = handbookUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         handbookUrl_ = b;
         return b;
       } else {
@@ -820,27 +818,27 @@ public final class RegionInfoOuterClass {
      * <code>uint32 client_silence_data_version = 18;</code>
      * @return The clientSilenceDataVersion.
      */
-    @Override
+    @java.lang.Override
     public int getClientSilenceDataVersion() {
       return clientSilenceDataVersion_;
     }
 
     public static final int CLIENT_DATA_MD5_FIELD_NUMBER = 19;
     @SuppressWarnings("serial")
-    private volatile Object clientDataMd5_ = "";
+    private volatile java.lang.Object clientDataMd5_ = "";
     /**
      * <code>string client_data_md5 = 19;</code>
      * @return The clientDataMd5.
      */
-    @Override
-    public String getClientDataMd5() {
-      Object ref = clientDataMd5_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getClientDataMd5() {
+      java.lang.Object ref = clientDataMd5_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         clientDataMd5_ = s;
         return s;
       }
@@ -849,14 +847,14 @@ public final class RegionInfoOuterClass {
      * <code>string client_data_md5 = 19;</code>
      * @return The bytes for clientDataMd5.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getClientDataMd5Bytes() {
-      Object ref = clientDataMd5_;
-      if (ref instanceof String) {
+      java.lang.Object ref = clientDataMd5_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         clientDataMd5_ = b;
         return b;
       } else {
@@ -866,20 +864,20 @@ public final class RegionInfoOuterClass {
 
     public static final int CLIENT_SILENCE_DATA_MD5_FIELD_NUMBER = 20;
     @SuppressWarnings("serial")
-    private volatile Object clientSilenceDataMd5_ = "";
+    private volatile java.lang.Object clientSilenceDataMd5_ = "";
     /**
      * <code>string client_silence_data_md5 = 20;</code>
      * @return The clientSilenceDataMd5.
      */
-    @Override
-    public String getClientSilenceDataMd5() {
-      Object ref = clientSilenceDataMd5_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getClientSilenceDataMd5() {
+      java.lang.Object ref = clientSilenceDataMd5_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         clientSilenceDataMd5_ = s;
         return s;
       }
@@ -888,14 +886,14 @@ public final class RegionInfoOuterClass {
      * <code>string client_silence_data_md5 = 20;</code>
      * @return The bytes for clientSilenceDataMd5.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getClientSilenceDataMd5Bytes() {
-      Object ref = clientSilenceDataMd5_;
-      if (ref instanceof String) {
+      java.lang.Object ref = clientSilenceDataMd5_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         clientSilenceDataMd5_ = b;
         return b;
       } else {
@@ -904,12 +902,12 @@ public final class RegionInfoOuterClass {
     }
 
     public static final int RES_VERSION_CONFIG_FIELD_NUMBER = 22;
-    private org.nofs.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
+    private org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
     /**
      * <code>.ResVersionConfig res_version_config = 22;</code>
      * @return Whether the resVersionConfig field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasResVersionConfig() {
       return resVersionConfig_ != null;
     }
@@ -917,16 +915,16 @@ public final class RegionInfoOuterClass {
      * <code>.ResVersionConfig res_version_config = 22;</code>
      * @return The resVersionConfig.
      */
-    @Override
-    public org.nofs.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
-      return resVersionConfig_ == null ? org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
+    @java.lang.Override
+    public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
+      return resVersionConfig_ == null ? org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
     }
     /**
      * <code>.ResVersionConfig res_version_config = 22;</code>
      */
-    @Override
-    public org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
-      return resVersionConfig_ == null ? org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
+    @java.lang.Override
+    public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
+      return resVersionConfig_ == null ? org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
     }
 
     public static final int SECRET_KEY_FIELD_NUMBER = 23;
@@ -935,27 +933,27 @@ public final class RegionInfoOuterClass {
      * <code>bytes secret_key = 23;</code>
      * @return The secretKey.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getSecretKey() {
       return secretKey_;
     }
 
     public static final int OFFICIAL_COMMUNITY_URL_FIELD_NUMBER = 24;
     @SuppressWarnings("serial")
-    private volatile Object officialCommunityUrl_ = "";
+    private volatile java.lang.Object officialCommunityUrl_ = "";
     /**
      * <code>string official_community_url = 24;</code>
      * @return The officialCommunityUrl.
      */
-    @Override
-    public String getOfficialCommunityUrl() {
-      Object ref = officialCommunityUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getOfficialCommunityUrl() {
+      java.lang.Object ref = officialCommunityUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         officialCommunityUrl_ = s;
         return s;
       }
@@ -964,14 +962,14 @@ public final class RegionInfoOuterClass {
      * <code>string official_community_url = 24;</code>
      * @return The bytes for officialCommunityUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getOfficialCommunityUrlBytes() {
-      Object ref = officialCommunityUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = officialCommunityUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         officialCommunityUrl_ = b;
         return b;
       } else {
@@ -981,20 +979,20 @@ public final class RegionInfoOuterClass {
 
     public static final int CLIENT_VERSION_SUFFIX_FIELD_NUMBER = 26;
     @SuppressWarnings("serial")
-    private volatile Object clientVersionSuffix_ = "";
+    private volatile java.lang.Object clientVersionSuffix_ = "";
     /**
      * <code>string client_version_suffix = 26;</code>
      * @return The clientVersionSuffix.
      */
-    @Override
-    public String getClientVersionSuffix() {
-      Object ref = clientVersionSuffix_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getClientVersionSuffix() {
+      java.lang.Object ref = clientVersionSuffix_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         clientVersionSuffix_ = s;
         return s;
       }
@@ -1003,14 +1001,14 @@ public final class RegionInfoOuterClass {
      * <code>string client_version_suffix = 26;</code>
      * @return The bytes for clientVersionSuffix.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getClientVersionSuffixBytes() {
-      Object ref = clientVersionSuffix_;
-      if (ref instanceof String) {
+      java.lang.Object ref = clientVersionSuffix_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         clientVersionSuffix_ = b;
         return b;
       } else {
@@ -1020,20 +1018,20 @@ public final class RegionInfoOuterClass {
 
     public static final int CLIENT_SILENCE_VERSION_SUFFIX_FIELD_NUMBER = 27;
     @SuppressWarnings("serial")
-    private volatile Object clientSilenceVersionSuffix_ = "";
+    private volatile java.lang.Object clientSilenceVersionSuffix_ = "";
     /**
      * <code>string client_silence_version_suffix = 27;</code>
      * @return The clientSilenceVersionSuffix.
      */
-    @Override
-    public String getClientSilenceVersionSuffix() {
-      Object ref = clientSilenceVersionSuffix_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getClientSilenceVersionSuffix() {
+      java.lang.Object ref = clientSilenceVersionSuffix_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         clientSilenceVersionSuffix_ = s;
         return s;
       }
@@ -1042,14 +1040,14 @@ public final class RegionInfoOuterClass {
      * <code>string client_silence_version_suffix = 27;</code>
      * @return The bytes for clientSilenceVersionSuffix.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getClientSilenceVersionSuffixBytes() {
-      Object ref = clientSilenceVersionSuffix_;
-      if (ref instanceof String) {
+      java.lang.Object ref = clientSilenceVersionSuffix_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         clientSilenceVersionSuffix_ = b;
         return b;
       } else {
@@ -1063,27 +1061,27 @@ public final class RegionInfoOuterClass {
      * <code>bool use_gateserver_domain_name = 28;</code>
      * @return The useGateserverDomainName.
      */
-    @Override
+    @java.lang.Override
     public boolean getUseGateserverDomainName() {
       return useGateserverDomainName_;
     }
 
     public static final int GATESERVER_DOMAIN_NAME_FIELD_NUMBER = 29;
     @SuppressWarnings("serial")
-    private volatile Object gateserverDomainName_ = "";
+    private volatile java.lang.Object gateserverDomainName_ = "";
     /**
      * <code>string gateserver_domain_name = 29;</code>
      * @return The gateserverDomainName.
      */
-    @Override
-    public String getGateserverDomainName() {
-      Object ref = gateserverDomainName_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getGateserverDomainName() {
+      java.lang.Object ref = gateserverDomainName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         gateserverDomainName_ = s;
         return s;
       }
@@ -1092,14 +1090,14 @@ public final class RegionInfoOuterClass {
      * <code>string gateserver_domain_name = 29;</code>
      * @return The bytes for gateserverDomainName.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getGateserverDomainNameBytes() {
-      Object ref = gateserverDomainName_;
-      if (ref instanceof String) {
+      java.lang.Object ref = gateserverDomainName_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         gateserverDomainName_ = b;
         return b;
       } else {
@@ -1109,20 +1107,20 @@ public final class RegionInfoOuterClass {
 
     public static final int USER_CENTER_URL_FIELD_NUMBER = 30;
     @SuppressWarnings("serial")
-    private volatile Object userCenterUrl_ = "";
+    private volatile java.lang.Object userCenterUrl_ = "";
     /**
      * <code>string user_center_url = 30;</code>
      * @return The userCenterUrl.
      */
-    @Override
-    public String getUserCenterUrl() {
-      Object ref = userCenterUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getUserCenterUrl() {
+      java.lang.Object ref = userCenterUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         userCenterUrl_ = s;
         return s;
       }
@@ -1131,14 +1129,14 @@ public final class RegionInfoOuterClass {
      * <code>string user_center_url = 30;</code>
      * @return The bytes for userCenterUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getUserCenterUrlBytes() {
-      Object ref = userCenterUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = userCenterUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         userCenterUrl_ = b;
         return b;
       } else {
@@ -1148,20 +1146,20 @@ public final class RegionInfoOuterClass {
 
     public static final int ACCOUNT_BIND_URL_FIELD_NUMBER = 31;
     @SuppressWarnings("serial")
-    private volatile Object accountBindUrl_ = "";
+    private volatile java.lang.Object accountBindUrl_ = "";
     /**
      * <code>string account_bind_url = 31;</code>
      * @return The accountBindUrl.
      */
-    @Override
-    public String getAccountBindUrl() {
-      Object ref = accountBindUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getAccountBindUrl() {
+      java.lang.Object ref = accountBindUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         accountBindUrl_ = s;
         return s;
       }
@@ -1170,14 +1168,14 @@ public final class RegionInfoOuterClass {
      * <code>string account_bind_url = 31;</code>
      * @return The bytes for accountBindUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAccountBindUrlBytes() {
-      Object ref = accountBindUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = accountBindUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         accountBindUrl_ = b;
         return b;
       } else {
@@ -1187,20 +1185,20 @@ public final class RegionInfoOuterClass {
 
     public static final int CDKEY_URL_FIELD_NUMBER = 32;
     @SuppressWarnings("serial")
-    private volatile Object cdkeyUrl_ = "";
+    private volatile java.lang.Object cdkeyUrl_ = "";
     /**
      * <code>string cdkey_url = 32;</code>
      * @return The cdkeyUrl.
      */
-    @Override
-    public String getCdkeyUrl() {
-      Object ref = cdkeyUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getCdkeyUrl() {
+      java.lang.Object ref = cdkeyUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         cdkeyUrl_ = s;
         return s;
       }
@@ -1209,14 +1207,14 @@ public final class RegionInfoOuterClass {
      * <code>string cdkey_url = 32;</code>
      * @return The bytes for cdkeyUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getCdkeyUrlBytes() {
-      Object ref = cdkeyUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = cdkeyUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         cdkeyUrl_ = b;
         return b;
       } else {
@@ -1226,20 +1224,20 @@ public final class RegionInfoOuterClass {
 
     public static final int PRIVACY_POLICY_URL_FIELD_NUMBER = 33;
     @SuppressWarnings("serial")
-    private volatile Object privacyPolicyUrl_ = "";
+    private volatile java.lang.Object privacyPolicyUrl_ = "";
     /**
      * <code>string privacy_policy_url = 33;</code>
      * @return The privacyPolicyUrl.
      */
-    @Override
-    public String getPrivacyPolicyUrl() {
-      Object ref = privacyPolicyUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getPrivacyPolicyUrl() {
+      java.lang.Object ref = privacyPolicyUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         privacyPolicyUrl_ = s;
         return s;
       }
@@ -1248,14 +1246,14 @@ public final class RegionInfoOuterClass {
      * <code>string privacy_policy_url = 33;</code>
      * @return The bytes for privacyPolicyUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getPrivacyPolicyUrlBytes() {
-      Object ref = privacyPolicyUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = privacyPolicyUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         privacyPolicyUrl_ = b;
         return b;
       } else {
@@ -1265,20 +1263,20 @@ public final class RegionInfoOuterClass {
 
     public static final int NEXT_RESOURCE_URL_FIELD_NUMBER = 34;
     @SuppressWarnings("serial")
-    private volatile Object nextResourceUrl_ = "";
+    private volatile java.lang.Object nextResourceUrl_ = "";
     /**
      * <code>string next_resource_url = 34;</code>
      * @return The nextResourceUrl.
      */
-    @Override
-    public String getNextResourceUrl() {
-      Object ref = nextResourceUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getNextResourceUrl() {
+      java.lang.Object ref = nextResourceUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         nextResourceUrl_ = s;
         return s;
       }
@@ -1287,14 +1285,14 @@ public final class RegionInfoOuterClass {
      * <code>string next_resource_url = 34;</code>
      * @return The bytes for nextResourceUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getNextResourceUrlBytes() {
-      Object ref = nextResourceUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = nextResourceUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         nextResourceUrl_ = b;
         return b;
       } else {
@@ -1303,12 +1301,12 @@ public final class RegionInfoOuterClass {
     }
 
     public static final int NEXT_RES_VERSION_CONFIG_FIELD_NUMBER = 35;
-    private org.nofs.ResVersionConfigOuterClass.ResVersionConfig nextResVersionConfig_;
+    private org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig nextResVersionConfig_;
     /**
      * <code>.ResVersionConfig next_res_version_config = 35;</code>
      * @return Whether the nextResVersionConfig field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasNextResVersionConfig() {
       return nextResVersionConfig_ != null;
     }
@@ -1316,34 +1314,34 @@ public final class RegionInfoOuterClass {
      * <code>.ResVersionConfig next_res_version_config = 35;</code>
      * @return The nextResVersionConfig.
      */
-    @Override
-    public org.nofs.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig() {
-      return nextResVersionConfig_ == null ? org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
+    @java.lang.Override
+    public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig() {
+      return nextResVersionConfig_ == null ? org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
     }
     /**
      * <code>.ResVersionConfig next_res_version_config = 35;</code>
      */
-    @Override
-    public org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder() {
-      return nextResVersionConfig_ == null ? org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
+    @java.lang.Override
+    public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder() {
+      return nextResVersionConfig_ == null ? org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
     }
 
     public static final int GAME_BIZ_FIELD_NUMBER = 36;
     @SuppressWarnings("serial")
-    private volatile Object gameBiz_ = "";
+    private volatile java.lang.Object gameBiz_ = "";
     /**
      * <code>string game_biz = 36;</code>
      * @return The gameBiz.
      */
-    @Override
-    public String getGameBiz() {
-      Object ref = gameBiz_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getGameBiz() {
+      java.lang.Object ref = gameBiz_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         gameBiz_ = s;
         return s;
       }
@@ -1352,14 +1350,14 @@ public final class RegionInfoOuterClass {
      * <code>string game_biz = 36;</code>
      * @return The bytes for gameBiz.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getGameBizBytes() {
-      Object ref = gameBiz_;
-      if (ref instanceof String) {
+      java.lang.Object ref = gameBiz_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         gameBiz_ = b;
         return b;
       } else {
@@ -1368,7 +1366,7 @@ public final class RegionInfoOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1378,7 +1376,7 @@ public final class RegionInfoOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gateserverIp_)) {
@@ -1471,7 +1469,7 @@ public final class RegionInfoOuterClass {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1576,15 +1574,15 @@ public final class RegionInfoOuterClass {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.nofs.RegionInfoOuterClass.RegionInfo)) {
+      if (!(obj instanceof org.nofs.net.proto.RegionInfoOuterClass.RegionInfo)) {
         return super.equals(obj);
       }
-      org.nofs.RegionInfoOuterClass.RegionInfo other = (org.nofs.RegionInfoOuterClass.RegionInfo) obj;
+      org.nofs.net.proto.RegionInfoOuterClass.RegionInfo other = (org.nofs.net.proto.RegionInfoOuterClass.RegionInfo) obj;
 
       if (!getGateserverIp()
           .equals(other.getGateserverIp())) return false;
@@ -1654,7 +1652,7 @@ public final class RegionInfoOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1729,44 +1727,44 @@ public final class RegionInfoOuterClass {
       return hash;
     }
 
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(byte[] data)
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1774,26 +1772,26 @@ public final class RegionInfoOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseDelimitedFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseDelimitedFrom(
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.RegionInfoOuterClass.RegionInfo parseFrom(
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1801,21 +1799,21 @@ public final class RegionInfoOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.nofs.RegionInfoOuterClass.RegionInfo prototype) {
+    public static Builder newBuilder(org.nofs.net.proto.RegionInfoOuterClass.RegionInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -1827,21 +1825,21 @@ public final class RegionInfoOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:RegionInfo)
-        org.nofs.RegionInfoOuterClass.RegionInfoOrBuilder {
+        org.nofs.net.proto.RegionInfoOuterClass.RegionInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.nofs.RegionInfoOuterClass.internal_static_RegionInfo_descriptor;
+        return org.nofs.net.proto.RegionInfoOuterClass.internal_static_RegionInfo_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.nofs.RegionInfoOuterClass.internal_static_RegionInfo_fieldAccessorTable
+        return org.nofs.net.proto.RegionInfoOuterClass.internal_static_RegionInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.nofs.RegionInfoOuterClass.RegionInfo.class, org.nofs.RegionInfoOuterClass.RegionInfo.Builder.class);
+                org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.class, org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.Builder.class);
       }
 
-      // Construct using org.nofs.RegionInfoOuterClass.RegionInfo.newBuilder()
+      // Construct using org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.newBuilder()
       private Builder() {
 
       }
@@ -1851,7 +1849,7 @@ public final class RegionInfoOuterClass {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -1895,35 +1893,35 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.nofs.RegionInfoOuterClass.internal_static_RegionInfo_descriptor;
+        return org.nofs.net.proto.RegionInfoOuterClass.internal_static_RegionInfo_descriptor;
       }
 
-      @Override
-      public org.nofs.RegionInfoOuterClass.RegionInfo getDefaultInstanceForType() {
-        return org.nofs.RegionInfoOuterClass.RegionInfo.getDefaultInstance();
+      @java.lang.Override
+      public org.nofs.net.proto.RegionInfoOuterClass.RegionInfo getDefaultInstanceForType() {
+        return org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.getDefaultInstance();
       }
 
-      @Override
-      public org.nofs.RegionInfoOuterClass.RegionInfo build() {
-        org.nofs.RegionInfoOuterClass.RegionInfo result = buildPartial();
+      @java.lang.Override
+      public org.nofs.net.proto.RegionInfoOuterClass.RegionInfo build() {
+        org.nofs.net.proto.RegionInfoOuterClass.RegionInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public org.nofs.RegionInfoOuterClass.RegionInfo buildPartial() {
-        org.nofs.RegionInfoOuterClass.RegionInfo result = new org.nofs.RegionInfoOuterClass.RegionInfo(this);
+      @java.lang.Override
+      public org.nofs.net.proto.RegionInfoOuterClass.RegionInfo buildPartial() {
+        org.nofs.net.proto.RegionInfoOuterClass.RegionInfo result = new org.nofs.net.proto.RegionInfoOuterClass.RegionInfo(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(org.nofs.RegionInfoOuterClass.RegionInfo result) {
+      private void buildPartial0(org.nofs.net.proto.RegionInfoOuterClass.RegionInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.gateserverIp_ = gateserverIp_;
@@ -2018,18 +2016,18 @@ public final class RegionInfoOuterClass {
         }
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.nofs.RegionInfoOuterClass.RegionInfo) {
-          return mergeFrom((org.nofs.RegionInfoOuterClass.RegionInfo)other);
+        if (other instanceof org.nofs.net.proto.RegionInfoOuterClass.RegionInfo) {
+          return mergeFrom((org.nofs.net.proto.RegionInfoOuterClass.RegionInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.nofs.RegionInfoOuterClass.RegionInfo other) {
-        if (other == org.nofs.RegionInfoOuterClass.RegionInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.nofs.net.proto.RegionInfoOuterClass.RegionInfo other) {
+        if (other == org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.getDefaultInstance()) return this;
         if (!other.getGateserverIp().isEmpty()) {
           gateserverIp_ = other.gateserverIp_;
           bitField0_ |= 0x00000001;
@@ -2166,18 +2164,18 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -2353,21 +2351,21 @@ public final class RegionInfoOuterClass {
       }
       private int bitField0_;
 
-      private Object gateserverIp_ = "";
+      private java.lang.Object gateserverIp_ = "";
       /**
        * <code>string gateserver_ip = 1;</code>
        * @return The gateserverIp.
        */
-      public String getGateserverIp() {
-        Object ref = gateserverIp_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getGateserverIp() {
+        java.lang.Object ref = gateserverIp_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           gateserverIp_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2376,11 +2374,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getGateserverIpBytes() {
-        Object ref = gateserverIp_;
+        java.lang.Object ref = gateserverIp_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           gateserverIp_ = b;
           return b;
         } else {
@@ -2393,7 +2391,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setGateserverIp(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         gateserverIp_ = value;
         bitField0_ |= 0x00000001;
@@ -2430,7 +2428,7 @@ public final class RegionInfoOuterClass {
        * <code>uint32 gateserver_port = 2;</code>
        * @return The gateserverPort.
        */
-      @Override
+      @java.lang.Override
       public int getGateserverPort() {
         return gateserverPort_;
       }
@@ -2457,21 +2455,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object payCallbackUrl_ = "";
+      private java.lang.Object payCallbackUrl_ = "";
       /**
        * <code>string pay_callback_url = 3;</code>
        * @return The payCallbackUrl.
        */
-      public String getPayCallbackUrl() {
-        Object ref = payCallbackUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPayCallbackUrl() {
+        java.lang.Object ref = payCallbackUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           payCallbackUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2480,11 +2478,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getPayCallbackUrlBytes() {
-        Object ref = payCallbackUrl_;
+        java.lang.Object ref = payCallbackUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           payCallbackUrl_ = b;
           return b;
         } else {
@@ -2497,7 +2495,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setPayCallbackUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         payCallbackUrl_ = value;
         bitField0_ |= 0x00000004;
@@ -2529,21 +2527,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object areaType_ = "";
+      private java.lang.Object areaType_ = "";
       /**
        * <code>string area_type = 7;</code>
        * @return The areaType.
        */
-      public String getAreaType() {
-        Object ref = areaType_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getAreaType() {
+        java.lang.Object ref = areaType_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           areaType_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2552,11 +2550,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getAreaTypeBytes() {
-        Object ref = areaType_;
+        java.lang.Object ref = areaType_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           areaType_ = b;
           return b;
         } else {
@@ -2569,7 +2567,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAreaType(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         areaType_ = value;
         bitField0_ |= 0x00000008;
@@ -2601,21 +2599,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object resourceUrl_ = "";
+      private java.lang.Object resourceUrl_ = "";
       /**
        * <code>string resource_url = 8;</code>
        * @return The resourceUrl.
        */
-      public String getResourceUrl() {
-        Object ref = resourceUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getResourceUrl() {
+        java.lang.Object ref = resourceUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           resourceUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2624,11 +2622,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getResourceUrlBytes() {
-        Object ref = resourceUrl_;
+        java.lang.Object ref = resourceUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           resourceUrl_ = b;
           return b;
         } else {
@@ -2641,7 +2639,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setResourceUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         resourceUrl_ = value;
         bitField0_ |= 0x00000010;
@@ -2673,21 +2671,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object dataUrl_ = "";
+      private java.lang.Object dataUrl_ = "";
       /**
        * <code>string data_url = 9;</code>
        * @return The dataUrl.
        */
-      public String getDataUrl() {
-        Object ref = dataUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getDataUrl() {
+        java.lang.Object ref = dataUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           dataUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2696,11 +2694,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getDataUrlBytes() {
-        Object ref = dataUrl_;
+        java.lang.Object ref = dataUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           dataUrl_ = b;
           return b;
         } else {
@@ -2713,7 +2711,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setDataUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         dataUrl_ = value;
         bitField0_ |= 0x00000020;
@@ -2745,21 +2743,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object feedbackUrl_ = "";
+      private java.lang.Object feedbackUrl_ = "";
       /**
        * <code>string feedback_url = 10;</code>
        * @return The feedbackUrl.
        */
-      public String getFeedbackUrl() {
-        Object ref = feedbackUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getFeedbackUrl() {
+        java.lang.Object ref = feedbackUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           feedbackUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2768,11 +2766,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getFeedbackUrlBytes() {
-        Object ref = feedbackUrl_;
+        java.lang.Object ref = feedbackUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           feedbackUrl_ = b;
           return b;
         } else {
@@ -2785,7 +2783,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setFeedbackUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         feedbackUrl_ = value;
         bitField0_ |= 0x00000040;
@@ -2817,21 +2815,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object bulletinUrl_ = "";
+      private java.lang.Object bulletinUrl_ = "";
       /**
        * <code>string bulletin_url = 11;</code>
        * @return The bulletinUrl.
        */
-      public String getBulletinUrl() {
-        Object ref = bulletinUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getBulletinUrl() {
+        java.lang.Object ref = bulletinUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           bulletinUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2840,11 +2838,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getBulletinUrlBytes() {
-        Object ref = bulletinUrl_;
+        java.lang.Object ref = bulletinUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           bulletinUrl_ = b;
           return b;
         } else {
@@ -2857,7 +2855,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBulletinUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         bulletinUrl_ = value;
         bitField0_ |= 0x00000080;
@@ -2889,21 +2887,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object resourceUrlBak_ = "";
+      private java.lang.Object resourceUrlBak_ = "";
       /**
        * <code>string resource_url_bak = 12;</code>
        * @return The resourceUrlBak.
        */
-      public String getResourceUrlBak() {
-        Object ref = resourceUrlBak_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getResourceUrlBak() {
+        java.lang.Object ref = resourceUrlBak_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           resourceUrlBak_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2912,11 +2910,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getResourceUrlBakBytes() {
-        Object ref = resourceUrlBak_;
+        java.lang.Object ref = resourceUrlBak_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           resourceUrlBak_ = b;
           return b;
         } else {
@@ -2929,7 +2927,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setResourceUrlBak(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         resourceUrlBak_ = value;
         bitField0_ |= 0x00000100;
@@ -2961,21 +2959,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object dataUrlBak_ = "";
+      private java.lang.Object dataUrlBak_ = "";
       /**
        * <code>string data_url_bak = 13;</code>
        * @return The dataUrlBak.
        */
-      public String getDataUrlBak() {
-        Object ref = dataUrlBak_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getDataUrlBak() {
+        java.lang.Object ref = dataUrlBak_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           dataUrlBak_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2984,11 +2982,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getDataUrlBakBytes() {
-        Object ref = dataUrlBak_;
+        java.lang.Object ref = dataUrlBak_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           dataUrlBak_ = b;
           return b;
         } else {
@@ -3001,7 +2999,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setDataUrlBak(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         dataUrlBak_ = value;
         bitField0_ |= 0x00000200;
@@ -3038,7 +3036,7 @@ public final class RegionInfoOuterClass {
        * <code>uint32 client_data_version = 14;</code>
        * @return The clientDataVersion.
        */
-      @Override
+      @java.lang.Override
       public int getClientDataVersion() {
         return clientDataVersion_;
       }
@@ -3065,21 +3063,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object handbookUrl_ = "";
+      private java.lang.Object handbookUrl_ = "";
       /**
        * <code>string handbook_url = 16;</code>
        * @return The handbookUrl.
        */
-      public String getHandbookUrl() {
-        Object ref = handbookUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getHandbookUrl() {
+        java.lang.Object ref = handbookUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           handbookUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3088,11 +3086,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getHandbookUrlBytes() {
-        Object ref = handbookUrl_;
+        java.lang.Object ref = handbookUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           handbookUrl_ = b;
           return b;
         } else {
@@ -3105,7 +3103,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setHandbookUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         handbookUrl_ = value;
         bitField0_ |= 0x00000800;
@@ -3142,7 +3140,7 @@ public final class RegionInfoOuterClass {
        * <code>uint32 client_silence_data_version = 18;</code>
        * @return The clientSilenceDataVersion.
        */
-      @Override
+      @java.lang.Override
       public int getClientSilenceDataVersion() {
         return clientSilenceDataVersion_;
       }
@@ -3169,21 +3167,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object clientDataMd5_ = "";
+      private java.lang.Object clientDataMd5_ = "";
       /**
        * <code>string client_data_md5 = 19;</code>
        * @return The clientDataMd5.
        */
-      public String getClientDataMd5() {
-        Object ref = clientDataMd5_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getClientDataMd5() {
+        java.lang.Object ref = clientDataMd5_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           clientDataMd5_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3192,11 +3190,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getClientDataMd5Bytes() {
-        Object ref = clientDataMd5_;
+        java.lang.Object ref = clientDataMd5_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           clientDataMd5_ = b;
           return b;
         } else {
@@ -3209,7 +3207,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setClientDataMd5(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         clientDataMd5_ = value;
         bitField0_ |= 0x00002000;
@@ -3241,21 +3239,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object clientSilenceDataMd5_ = "";
+      private java.lang.Object clientSilenceDataMd5_ = "";
       /**
        * <code>string client_silence_data_md5 = 20;</code>
        * @return The clientSilenceDataMd5.
        */
-      public String getClientSilenceDataMd5() {
-        Object ref = clientSilenceDataMd5_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getClientSilenceDataMd5() {
+        java.lang.Object ref = clientSilenceDataMd5_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           clientSilenceDataMd5_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3264,11 +3262,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getClientSilenceDataMd5Bytes() {
-        Object ref = clientSilenceDataMd5_;
+        java.lang.Object ref = clientSilenceDataMd5_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           clientSilenceDataMd5_ = b;
           return b;
         } else {
@@ -3281,7 +3279,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setClientSilenceDataMd5(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         clientSilenceDataMd5_ = value;
         bitField0_ |= 0x00004000;
@@ -3313,9 +3311,9 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private org.nofs.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
+      private org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> resVersionConfigBuilder_;
+          org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> resVersionConfigBuilder_;
       /**
        * <code>.ResVersionConfig res_version_config = 22;</code>
        * @return Whether the resVersionConfig field is set.
@@ -3327,9 +3325,9 @@ public final class RegionInfoOuterClass {
        * <code>.ResVersionConfig res_version_config = 22;</code>
        * @return The resVersionConfig.
        */
-      public org.nofs.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
+      public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
         if (resVersionConfigBuilder_ == null) {
-          return resVersionConfig_ == null ? org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
+          return resVersionConfig_ == null ? org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
         } else {
           return resVersionConfigBuilder_.getMessage();
         }
@@ -3337,7 +3335,7 @@ public final class RegionInfoOuterClass {
       /**
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
-      public Builder setResVersionConfig(org.nofs.ResVersionConfigOuterClass.ResVersionConfig value) {
+      public Builder setResVersionConfig(org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
         if (resVersionConfigBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3354,7 +3352,7 @@ public final class RegionInfoOuterClass {
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
       public Builder setResVersionConfig(
-          org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder builderForValue) {
+          org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder builderForValue) {
         if (resVersionConfigBuilder_ == null) {
           resVersionConfig_ = builderForValue.build();
         } else {
@@ -3367,11 +3365,11 @@ public final class RegionInfoOuterClass {
       /**
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
-      public Builder mergeResVersionConfig(org.nofs.ResVersionConfigOuterClass.ResVersionConfig value) {
+      public Builder mergeResVersionConfig(org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
         if (resVersionConfigBuilder_ == null) {
           if (((bitField0_ & 0x00008000) != 0) &&
             resVersionConfig_ != null &&
-            resVersionConfig_ != org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance()) {
+            resVersionConfig_ != org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance()) {
             getResVersionConfigBuilder().mergeFrom(value);
           } else {
             resVersionConfig_ = value;
@@ -3399,7 +3397,7 @@ public final class RegionInfoOuterClass {
       /**
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
-      public org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder getResVersionConfigBuilder() {
+      public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder getResVersionConfigBuilder() {
         bitField0_ |= 0x00008000;
         onChanged();
         return getResVersionConfigFieldBuilder().getBuilder();
@@ -3407,23 +3405,23 @@ public final class RegionInfoOuterClass {
       /**
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
-      public org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
+      public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
         if (resVersionConfigBuilder_ != null) {
           return resVersionConfigBuilder_.getMessageOrBuilder();
         } else {
           return resVersionConfig_ == null ?
-              org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
+              org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
         }
       }
       /**
        * <code>.ResVersionConfig res_version_config = 22;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> 
+          org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> 
           getResVersionConfigFieldBuilder() {
         if (resVersionConfigBuilder_ == null) {
           resVersionConfigBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              org.nofs.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder>(
+              org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder>(
                   getResVersionConfig(),
                   getParentForChildren(),
                   isClean());
@@ -3437,7 +3435,7 @@ public final class RegionInfoOuterClass {
        * <code>bytes secret_key = 23;</code>
        * @return The secretKey.
        */
-      @Override
+      @java.lang.Override
       public com.google.protobuf.ByteString getSecretKey() {
         return secretKey_;
       }
@@ -3464,21 +3462,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object officialCommunityUrl_ = "";
+      private java.lang.Object officialCommunityUrl_ = "";
       /**
        * <code>string official_community_url = 24;</code>
        * @return The officialCommunityUrl.
        */
-      public String getOfficialCommunityUrl() {
-        Object ref = officialCommunityUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getOfficialCommunityUrl() {
+        java.lang.Object ref = officialCommunityUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           officialCommunityUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3487,11 +3485,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getOfficialCommunityUrlBytes() {
-        Object ref = officialCommunityUrl_;
+        java.lang.Object ref = officialCommunityUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           officialCommunityUrl_ = b;
           return b;
         } else {
@@ -3504,7 +3502,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setOfficialCommunityUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         officialCommunityUrl_ = value;
         bitField0_ |= 0x00020000;
@@ -3536,21 +3534,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object clientVersionSuffix_ = "";
+      private java.lang.Object clientVersionSuffix_ = "";
       /**
        * <code>string client_version_suffix = 26;</code>
        * @return The clientVersionSuffix.
        */
-      public String getClientVersionSuffix() {
-        Object ref = clientVersionSuffix_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getClientVersionSuffix() {
+        java.lang.Object ref = clientVersionSuffix_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           clientVersionSuffix_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3559,11 +3557,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getClientVersionSuffixBytes() {
-        Object ref = clientVersionSuffix_;
+        java.lang.Object ref = clientVersionSuffix_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           clientVersionSuffix_ = b;
           return b;
         } else {
@@ -3576,7 +3574,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setClientVersionSuffix(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         clientVersionSuffix_ = value;
         bitField0_ |= 0x00040000;
@@ -3608,21 +3606,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object clientSilenceVersionSuffix_ = "";
+      private java.lang.Object clientSilenceVersionSuffix_ = "";
       /**
        * <code>string client_silence_version_suffix = 27;</code>
        * @return The clientSilenceVersionSuffix.
        */
-      public String getClientSilenceVersionSuffix() {
-        Object ref = clientSilenceVersionSuffix_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getClientSilenceVersionSuffix() {
+        java.lang.Object ref = clientSilenceVersionSuffix_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           clientSilenceVersionSuffix_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3631,11 +3629,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getClientSilenceVersionSuffixBytes() {
-        Object ref = clientSilenceVersionSuffix_;
+        java.lang.Object ref = clientSilenceVersionSuffix_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           clientSilenceVersionSuffix_ = b;
           return b;
         } else {
@@ -3648,7 +3646,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setClientSilenceVersionSuffix(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         clientSilenceVersionSuffix_ = value;
         bitField0_ |= 0x00080000;
@@ -3685,7 +3683,7 @@ public final class RegionInfoOuterClass {
        * <code>bool use_gateserver_domain_name = 28;</code>
        * @return The useGateserverDomainName.
        */
-      @Override
+      @java.lang.Override
       public boolean getUseGateserverDomainName() {
         return useGateserverDomainName_;
       }
@@ -3712,21 +3710,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object gateserverDomainName_ = "";
+      private java.lang.Object gateserverDomainName_ = "";
       /**
        * <code>string gateserver_domain_name = 29;</code>
        * @return The gateserverDomainName.
        */
-      public String getGateserverDomainName() {
-        Object ref = gateserverDomainName_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getGateserverDomainName() {
+        java.lang.Object ref = gateserverDomainName_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           gateserverDomainName_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3735,11 +3733,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getGateserverDomainNameBytes() {
-        Object ref = gateserverDomainName_;
+        java.lang.Object ref = gateserverDomainName_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           gateserverDomainName_ = b;
           return b;
         } else {
@@ -3752,7 +3750,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setGateserverDomainName(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         gateserverDomainName_ = value;
         bitField0_ |= 0x00200000;
@@ -3784,21 +3782,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object userCenterUrl_ = "";
+      private java.lang.Object userCenterUrl_ = "";
       /**
        * <code>string user_center_url = 30;</code>
        * @return The userCenterUrl.
        */
-      public String getUserCenterUrl() {
-        Object ref = userCenterUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUserCenterUrl() {
+        java.lang.Object ref = userCenterUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           userCenterUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3807,11 +3805,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getUserCenterUrlBytes() {
-        Object ref = userCenterUrl_;
+        java.lang.Object ref = userCenterUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           userCenterUrl_ = b;
           return b;
         } else {
@@ -3824,7 +3822,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setUserCenterUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         userCenterUrl_ = value;
         bitField0_ |= 0x00400000;
@@ -3856,21 +3854,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object accountBindUrl_ = "";
+      private java.lang.Object accountBindUrl_ = "";
       /**
        * <code>string account_bind_url = 31;</code>
        * @return The accountBindUrl.
        */
-      public String getAccountBindUrl() {
-        Object ref = accountBindUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getAccountBindUrl() {
+        java.lang.Object ref = accountBindUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           accountBindUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3879,11 +3877,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getAccountBindUrlBytes() {
-        Object ref = accountBindUrl_;
+        java.lang.Object ref = accountBindUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           accountBindUrl_ = b;
           return b;
         } else {
@@ -3896,7 +3894,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAccountBindUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         accountBindUrl_ = value;
         bitField0_ |= 0x00800000;
@@ -3928,21 +3926,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object cdkeyUrl_ = "";
+      private java.lang.Object cdkeyUrl_ = "";
       /**
        * <code>string cdkey_url = 32;</code>
        * @return The cdkeyUrl.
        */
-      public String getCdkeyUrl() {
-        Object ref = cdkeyUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getCdkeyUrl() {
+        java.lang.Object ref = cdkeyUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           cdkeyUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3951,11 +3949,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getCdkeyUrlBytes() {
-        Object ref = cdkeyUrl_;
+        java.lang.Object ref = cdkeyUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           cdkeyUrl_ = b;
           return b;
         } else {
@@ -3968,7 +3966,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setCdkeyUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         cdkeyUrl_ = value;
         bitField0_ |= 0x01000000;
@@ -4000,21 +3998,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object privacyPolicyUrl_ = "";
+      private java.lang.Object privacyPolicyUrl_ = "";
       /**
        * <code>string privacy_policy_url = 33;</code>
        * @return The privacyPolicyUrl.
        */
-      public String getPrivacyPolicyUrl() {
-        Object ref = privacyPolicyUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPrivacyPolicyUrl() {
+        java.lang.Object ref = privacyPolicyUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           privacyPolicyUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4023,11 +4021,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getPrivacyPolicyUrlBytes() {
-        Object ref = privacyPolicyUrl_;
+        java.lang.Object ref = privacyPolicyUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           privacyPolicyUrl_ = b;
           return b;
         } else {
@@ -4040,7 +4038,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setPrivacyPolicyUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         privacyPolicyUrl_ = value;
         bitField0_ |= 0x02000000;
@@ -4072,21 +4070,21 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private Object nextResourceUrl_ = "";
+      private java.lang.Object nextResourceUrl_ = "";
       /**
        * <code>string next_resource_url = 34;</code>
        * @return The nextResourceUrl.
        */
-      public String getNextResourceUrl() {
-        Object ref = nextResourceUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getNextResourceUrl() {
+        java.lang.Object ref = nextResourceUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           nextResourceUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4095,11 +4093,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getNextResourceUrlBytes() {
-        Object ref = nextResourceUrl_;
+        java.lang.Object ref = nextResourceUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           nextResourceUrl_ = b;
           return b;
         } else {
@@ -4112,7 +4110,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setNextResourceUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         nextResourceUrl_ = value;
         bitField0_ |= 0x04000000;
@@ -4144,9 +4142,9 @@ public final class RegionInfoOuterClass {
         return this;
       }
 
-      private org.nofs.ResVersionConfigOuterClass.ResVersionConfig nextResVersionConfig_;
+      private org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig nextResVersionConfig_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> nextResVersionConfigBuilder_;
+          org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> nextResVersionConfigBuilder_;
       /**
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        * @return Whether the nextResVersionConfig field is set.
@@ -4158,9 +4156,9 @@ public final class RegionInfoOuterClass {
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        * @return The nextResVersionConfig.
        */
-      public org.nofs.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig() {
+      public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig() {
         if (nextResVersionConfigBuilder_ == null) {
-          return nextResVersionConfig_ == null ? org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
+          return nextResVersionConfig_ == null ? org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
         } else {
           return nextResVersionConfigBuilder_.getMessage();
         }
@@ -4168,7 +4166,7 @@ public final class RegionInfoOuterClass {
       /**
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
-      public Builder setNextResVersionConfig(org.nofs.ResVersionConfigOuterClass.ResVersionConfig value) {
+      public Builder setNextResVersionConfig(org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
         if (nextResVersionConfigBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4185,7 +4183,7 @@ public final class RegionInfoOuterClass {
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
       public Builder setNextResVersionConfig(
-          org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder builderForValue) {
+          org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder builderForValue) {
         if (nextResVersionConfigBuilder_ == null) {
           nextResVersionConfig_ = builderForValue.build();
         } else {
@@ -4198,11 +4196,11 @@ public final class RegionInfoOuterClass {
       /**
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
-      public Builder mergeNextResVersionConfig(org.nofs.ResVersionConfigOuterClass.ResVersionConfig value) {
+      public Builder mergeNextResVersionConfig(org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
         if (nextResVersionConfigBuilder_ == null) {
           if (((bitField0_ & 0x08000000) != 0) &&
             nextResVersionConfig_ != null &&
-            nextResVersionConfig_ != org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance()) {
+            nextResVersionConfig_ != org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance()) {
             getNextResVersionConfigBuilder().mergeFrom(value);
           } else {
             nextResVersionConfig_ = value;
@@ -4230,7 +4228,7 @@ public final class RegionInfoOuterClass {
       /**
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
-      public org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder getNextResVersionConfigBuilder() {
+      public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder getNextResVersionConfigBuilder() {
         bitField0_ |= 0x08000000;
         onChanged();
         return getNextResVersionConfigFieldBuilder().getBuilder();
@@ -4238,23 +4236,23 @@ public final class RegionInfoOuterClass {
       /**
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
-      public org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder() {
+      public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder() {
         if (nextResVersionConfigBuilder_ != null) {
           return nextResVersionConfigBuilder_.getMessageOrBuilder();
         } else {
           return nextResVersionConfig_ == null ?
-              org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
+              org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
         }
       }
       /**
        * <code>.ResVersionConfig next_res_version_config = 35;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> 
+          org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> 
           getNextResVersionConfigFieldBuilder() {
         if (nextResVersionConfigBuilder_ == null) {
           nextResVersionConfigBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              org.nofs.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder>(
+              org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder>(
                   getNextResVersionConfig(),
                   getParentForChildren(),
                   isClean());
@@ -4263,21 +4261,21 @@ public final class RegionInfoOuterClass {
         return nextResVersionConfigBuilder_;
       }
 
-      private Object gameBiz_ = "";
+      private java.lang.Object gameBiz_ = "";
       /**
        * <code>string game_biz = 36;</code>
        * @return The gameBiz.
        */
-      public String getGameBiz() {
-        Object ref = gameBiz_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getGameBiz() {
+        java.lang.Object ref = gameBiz_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           gameBiz_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4286,11 +4284,11 @@ public final class RegionInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getGameBizBytes() {
-        Object ref = gameBiz_;
+        java.lang.Object ref = gameBiz_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           gameBiz_ = b;
           return b;
         } else {
@@ -4303,7 +4301,7 @@ public final class RegionInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setGameBiz(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         gameBiz_ = value;
         bitField0_ |= 0x10000000;
@@ -4334,13 +4332,13 @@ public final class RegionInfoOuterClass {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -4351,18 +4349,18 @@ public final class RegionInfoOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:RegionInfo)
-    private static final org.nofs.RegionInfoOuterClass.RegionInfo DEFAULT_INSTANCE;
+    private static final org.nofs.net.proto.RegionInfoOuterClass.RegionInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.nofs.RegionInfoOuterClass.RegionInfo();
+      DEFAULT_INSTANCE = new org.nofs.net.proto.RegionInfoOuterClass.RegionInfo();
     }
 
-    public static org.nofs.RegionInfoOuterClass.RegionInfo getDefaultInstance() {
+    public static org.nofs.net.proto.RegionInfoOuterClass.RegionInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<RegionInfo>
         PARSER = new com.google.protobuf.AbstractParser<RegionInfo>() {
-      @Override
+      @java.lang.Override
       public RegionInfo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -4386,13 +4384,13 @@ public final class RegionInfoOuterClass {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<RegionInfo> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public org.nofs.RegionInfoOuterClass.RegionInfo getDefaultInstanceForType() {
+    @java.lang.Override
+    public org.nofs.net.proto.RegionInfoOuterClass.RegionInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4411,7 +4409,7 @@ public final class RegionInfoOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\020RegionInfo.proto\032\026ResVersionConfig.pro" +
       "to\"\257\006\n\nRegionInfo\022\025\n\rgateserver_ip\030\001 \001(\t" +
       "\022\027\n\017gateserver_port\030\002 \001(\r\022\030\n\020pay_callbac" +
@@ -4433,21 +4431,21 @@ public final class RegionInfoOuterClass {
       "cdkey_url\030  \001(\t\022\032\n\022privacy_policy_url\030! " +
       "\001(\t\022\031\n\021next_resource_url\030\" \001(\t\0222\n\027next_r" +
       "es_version_config\030# \001(\0132\021.ResVersionConf" +
-      "ig\022\020\n\010game_biz\030$ \001(\tB\013\n\torg.nofsb\006proto" +
-      "3"
+      "ig\022\020\n\010game_biz\030$ \001(\tB\024\n\022org.nofs.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          org.nofs.ResVersionConfigOuterClass.getDescriptor(),
+          org.nofs.net.proto.ResVersionConfigOuterClass.getDescriptor(),
         });
     internal_static_RegionInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_RegionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RegionInfo_descriptor,
-        new String[] { "GateserverIp", "GateserverPort", "PayCallbackUrl", "AreaType", "ResourceUrl", "DataUrl", "FeedbackUrl", "BulletinUrl", "ResourceUrlBak", "DataUrlBak", "ClientDataVersion", "HandbookUrl", "ClientSilenceDataVersion", "ClientDataMd5", "ClientSilenceDataMd5", "ResVersionConfig", "SecretKey", "OfficialCommunityUrl", "ClientVersionSuffix", "ClientSilenceVersionSuffix", "UseGateserverDomainName", "GateserverDomainName", "UserCenterUrl", "AccountBindUrl", "CdkeyUrl", "PrivacyPolicyUrl", "NextResourceUrl", "NextResVersionConfig", "GameBiz", });
-    org.nofs.ResVersionConfigOuterClass.getDescriptor();
+        new java.lang.String[] { "GateserverIp", "GateserverPort", "PayCallbackUrl", "AreaType", "ResourceUrl", "DataUrl", "FeedbackUrl", "BulletinUrl", "ResourceUrlBak", "DataUrlBak", "ClientDataVersion", "HandbookUrl", "ClientSilenceDataVersion", "ClientDataMd5", "ClientSilenceDataMd5", "ResVersionConfig", "SecretKey", "OfficialCommunityUrl", "ClientVersionSuffix", "ClientSilenceVersionSuffix", "UseGateserverDomainName", "GateserverDomainName", "UserCenterUrl", "AccountBindUrl", "CdkeyUrl", "PrivacyPolicyUrl", "NextResourceUrl", "NextResVersionConfig", "GameBiz", });
+    org.nofs.net.proto.ResVersionConfigOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

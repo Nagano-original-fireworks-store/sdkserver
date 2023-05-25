@@ -3,8 +3,6 @@
 
 package org.nofs.net.proto;
 
-import org.nofs.org.nofs;
-
 public final class QueryRegionListHttpRspOuterClass {
   private QueryRegionListHttpRspOuterClass() {}
   public static void registerAllExtensions(
@@ -29,12 +27,12 @@ public final class QueryRegionListHttpRspOuterClass {
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
-    java.util.List<org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo>
+    java.util.List<org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo> 
         getRegionListList();
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
-    org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo getRegionList(int index);
+    org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo getRegionList(int index);
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
@@ -42,12 +40,12 @@ public final class QueryRegionListHttpRspOuterClass {
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
-    java.util.List<? extends org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> 
+    java.util.List<? extends org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> 
         getRegionListOrBuilderList();
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
-    org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder getRegionListOrBuilder(
+    org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder getRegionListOrBuilder(
         int index);
 
     /**
@@ -86,24 +84,24 @@ public final class QueryRegionListHttpRspOuterClass {
       clientCustomConfigEncrypted_ = com.google.protobuf.ByteString.EMPTY;
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new QueryRegionListHttpRsp();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.nofs.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_descriptor;
+      return org.nofs.net.proto.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_descriptor;
     }
 
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.nofs.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_fieldAccessorTable
+      return org.nofs.net.proto.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.class, org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.Builder.class);
+              org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.class, org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.Builder.class);
     }
 
     public static final int RETCODE_FIELD_NUMBER = 1;
@@ -112,48 +110,48 @@ public final class QueryRegionListHttpRspOuterClass {
      * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
-    @Override
+    @java.lang.Override
     public int getRetcode() {
       return retcode_;
     }
 
     public static final int REGION_LIST_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
-    private java.util.List<org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo> regionList_;
+    private java.util.List<org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo> regionList_;
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
-    @Override
-    public java.util.List<org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo> getRegionListList() {
+    @java.lang.Override
+    public java.util.List<org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo> getRegionListList() {
       return regionList_;
     }
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
-    @Override
-    public java.util.List<? extends org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> 
+    @java.lang.Override
+    public java.util.List<? extends org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> 
         getRegionListOrBuilderList() {
       return regionList_;
     }
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
-    @Override
+    @java.lang.Override
     public int getRegionListCount() {
       return regionList_.size();
     }
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
-    @Override
-    public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo getRegionList(int index) {
+    @java.lang.Override
+    public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo getRegionList(int index) {
       return regionList_.get(index);
     }
     /**
      * <code>repeated .RegionSimpleInfo region_list = 2;</code>
      */
-    @Override
-    public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder getRegionListOrBuilder(
+    @java.lang.Override
+    public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder getRegionListOrBuilder(
         int index) {
       return regionList_.get(index);
     }
@@ -164,7 +162,7 @@ public final class QueryRegionListHttpRspOuterClass {
      * <code>bytes client_secret_key = 5;</code>
      * @return The clientSecretKey.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getClientSecretKey() {
       return clientSecretKey_;
     }
@@ -175,7 +173,7 @@ public final class QueryRegionListHttpRspOuterClass {
      * <code>bytes client_custom_config_encrypted = 6;</code>
      * @return The clientCustomConfigEncrypted.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getClientCustomConfigEncrypted() {
       return clientCustomConfigEncrypted_;
     }
@@ -186,13 +184,13 @@ public final class QueryRegionListHttpRspOuterClass {
      * <code>bool enable_login_pc = 7;</code>
      * @return The enableLoginPc.
      */
-    @Override
+    @java.lang.Override
     public boolean getEnableLoginPc() {
       return enableLoginPc_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -202,7 +200,7 @@ public final class QueryRegionListHttpRspOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
@@ -223,7 +221,7 @@ public final class QueryRegionListHttpRspOuterClass {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -254,15 +252,15 @@ public final class QueryRegionListHttpRspOuterClass {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp)) {
+      if (!(obj instanceof org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp)) {
         return super.equals(obj);
       }
-      org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp other = (org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp) obj;
+      org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp other = (org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp) obj;
 
       if (getRetcode()
           != other.getRetcode()) return false;
@@ -278,7 +276,7 @@ public final class QueryRegionListHttpRspOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -303,44 +301,44 @@ public final class QueryRegionListHttpRspOuterClass {
       return hash;
     }
 
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(byte[] data)
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -348,26 +346,26 @@ public final class QueryRegionListHttpRspOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseDelimitedFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseDelimitedFrom(
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -375,21 +373,21 @@ public final class QueryRegionListHttpRspOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp prototype) {
+    public static Builder newBuilder(org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -401,21 +399,21 @@ public final class QueryRegionListHttpRspOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:QueryRegionListHttpRsp)
-        org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRspOrBuilder {
+        org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRspOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.nofs.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_descriptor;
+        return org.nofs.net.proto.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.nofs.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_fieldAccessorTable
+        return org.nofs.net.proto.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.class, org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.Builder.class);
+                org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.class, org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.Builder.class);
       }
 
-      // Construct using org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.newBuilder()
+      // Construct using org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.newBuilder()
       private Builder() {
 
       }
@@ -425,7 +423,7 @@ public final class QueryRegionListHttpRspOuterClass {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -443,36 +441,36 @@ public final class QueryRegionListHttpRspOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.nofs.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_descriptor;
+        return org.nofs.net.proto.QueryRegionListHttpRspOuterClass.internal_static_QueryRegionListHttpRsp_descriptor;
       }
 
-      @Override
-      public org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp getDefaultInstanceForType() {
-        return org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.getDefaultInstance();
+      @java.lang.Override
+      public org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp getDefaultInstanceForType() {
+        return org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.getDefaultInstance();
       }
 
-      @Override
-      public org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp build() {
-        org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp result = buildPartial();
+      @java.lang.Override
+      public org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp build() {
+        org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp buildPartial() {
-        org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp result = new org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp(this);
+      @java.lang.Override
+      public org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp buildPartial() {
+        org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp result = new org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp(this);
         buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartialRepeatedFields(org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp result) {
+      private void buildPartialRepeatedFields(org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp result) {
         if (regionListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             regionList_ = java.util.Collections.unmodifiableList(regionList_);
@@ -484,7 +482,7 @@ public final class QueryRegionListHttpRspOuterClass {
         }
       }
 
-      private void buildPartial0(org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp result) {
+      private void buildPartial0(org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.retcode_ = retcode_;
@@ -500,18 +498,18 @@ public final class QueryRegionListHttpRspOuterClass {
         }
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp) {
-          return mergeFrom((org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp)other);
+        if (other instanceof org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp) {
+          return mergeFrom((org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp other) {
-        if (other == org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp other) {
+        if (other == org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp.getDefaultInstance()) return this;
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
@@ -555,18 +553,18 @@ public final class QueryRegionListHttpRspOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -582,9 +580,9 @@ public final class QueryRegionListHttpRspOuterClass {
                 break;
               } // case 8
               case 18: {
-                org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo m =
+                org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo m =
                     input.readMessage(
-                        org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.parser(),
+                        org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.parser(),
                         extensionRegistry);
                 if (regionListBuilder_ == null) {
                   ensureRegionListIsMutable();
@@ -631,7 +629,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
-      @Override
+      @java.lang.Override
       public int getRetcode() {
         return retcode_;
       }
@@ -658,22 +656,22 @@ public final class QueryRegionListHttpRspOuterClass {
         return this;
       }
 
-      private java.util.List<org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo> regionList_ =
+      private java.util.List<org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo> regionList_ =
         java.util.Collections.emptyList();
       private void ensureRegionListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          regionList_ = new java.util.ArrayList<org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo>(regionList_);
+          regionList_ = new java.util.ArrayList<org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo>(regionList_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> regionListBuilder_;
+          org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> regionListBuilder_;
 
       /**
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
-      public java.util.List<org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo> getRegionListList() {
+      public java.util.List<org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo> getRegionListList() {
         if (regionListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(regionList_);
         } else {
@@ -693,7 +691,7 @@ public final class QueryRegionListHttpRspOuterClass {
       /**
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
-      public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo getRegionList(int index) {
+      public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo getRegionList(int index) {
         if (regionListBuilder_ == null) {
           return regionList_.get(index);
         } else {
@@ -704,7 +702,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
       public Builder setRegionList(
-          int index, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo value) {
+          int index, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo value) {
         if (regionListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -721,7 +719,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
       public Builder setRegionList(
-          int index, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder builderForValue) {
+          int index, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder builderForValue) {
         if (regionListBuilder_ == null) {
           ensureRegionListIsMutable();
           regionList_.set(index, builderForValue.build());
@@ -734,7 +732,7 @@ public final class QueryRegionListHttpRspOuterClass {
       /**
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
-      public Builder addRegionList(org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo value) {
+      public Builder addRegionList(org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo value) {
         if (regionListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -751,7 +749,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
       public Builder addRegionList(
-          int index, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo value) {
+          int index, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo value) {
         if (regionListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -768,7 +766,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
       public Builder addRegionList(
-          org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder builderForValue) {
+          org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder builderForValue) {
         if (regionListBuilder_ == null) {
           ensureRegionListIsMutable();
           regionList_.add(builderForValue.build());
@@ -782,7 +780,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
       public Builder addRegionList(
-          int index, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder builderForValue) {
+          int index, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder builderForValue) {
         if (regionListBuilder_ == null) {
           ensureRegionListIsMutable();
           regionList_.add(index, builderForValue.build());
@@ -796,7 +794,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
       public Builder addAllRegionList(
-          Iterable<? extends org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo> values) {
+          java.lang.Iterable<? extends org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo> values) {
         if (regionListBuilder_ == null) {
           ensureRegionListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -836,14 +834,14 @@ public final class QueryRegionListHttpRspOuterClass {
       /**
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
-      public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder getRegionListBuilder(
+      public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder getRegionListBuilder(
           int index) {
         return getRegionListFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
-      public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder getRegionListOrBuilder(
+      public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder getRegionListOrBuilder(
           int index) {
         if (regionListBuilder_ == null) {
           return regionList_.get(index);  } else {
@@ -853,7 +851,7 @@ public final class QueryRegionListHttpRspOuterClass {
       /**
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
-      public java.util.List<? extends org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> 
+      public java.util.List<? extends org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> 
            getRegionListOrBuilderList() {
         if (regionListBuilder_ != null) {
           return regionListBuilder_.getMessageOrBuilderList();
@@ -864,31 +862,31 @@ public final class QueryRegionListHttpRspOuterClass {
       /**
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
-      public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder addRegionListBuilder() {
+      public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder addRegionListBuilder() {
         return getRegionListFieldBuilder().addBuilder(
-            org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.getDefaultInstance());
+            org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
-      public org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder addRegionListBuilder(
+      public org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder addRegionListBuilder(
           int index) {
         return getRegionListFieldBuilder().addBuilder(
-            index, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.getDefaultInstance());
+            index, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .RegionSimpleInfo region_list = 2;</code>
        */
-      public java.util.List<org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder> 
+      public java.util.List<org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder> 
            getRegionListBuilderList() {
         return getRegionListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> 
+          org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder> 
           getRegionListFieldBuilder() {
         if (regionListBuilder_ == null) {
           regionListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder, org.nofs.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder>(
+              org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo.Builder, org.nofs.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfoOrBuilder>(
                   regionList_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -903,7 +901,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>bytes client_secret_key = 5;</code>
        * @return The clientSecretKey.
        */
-      @Override
+      @java.lang.Override
       public com.google.protobuf.ByteString getClientSecretKey() {
         return clientSecretKey_;
       }
@@ -935,7 +933,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>bytes client_custom_config_encrypted = 6;</code>
        * @return The clientCustomConfigEncrypted.
        */
-      @Override
+      @java.lang.Override
       public com.google.protobuf.ByteString getClientCustomConfigEncrypted() {
         return clientCustomConfigEncrypted_;
       }
@@ -967,7 +965,7 @@ public final class QueryRegionListHttpRspOuterClass {
        * <code>bool enable_login_pc = 7;</code>
        * @return The enableLoginPc.
        */
-      @Override
+      @java.lang.Override
       public boolean getEnableLoginPc() {
         return enableLoginPc_;
       }
@@ -993,13 +991,13 @@ public final class QueryRegionListHttpRspOuterClass {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1010,18 +1008,18 @@ public final class QueryRegionListHttpRspOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:QueryRegionListHttpRsp)
-    private static final org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp DEFAULT_INSTANCE;
+    private static final org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp();
+      DEFAULT_INSTANCE = new org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp();
     }
 
-    public static org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp getDefaultInstance() {
+    public static org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<QueryRegionListHttpRsp>
         PARSER = new com.google.protobuf.AbstractParser<QueryRegionListHttpRsp>() {
-      @Override
+      @java.lang.Override
       public QueryRegionListHttpRsp parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1045,13 +1043,13 @@ public final class QueryRegionListHttpRspOuterClass {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<QueryRegionListHttpRsp> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public org.nofs.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp getDefaultInstanceForType() {
+    @java.lang.Override
+    public org.nofs.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1070,27 +1068,27 @@ public final class QueryRegionListHttpRspOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\034QueryRegionListHttpRsp.proto\032\026RegionSi" +
       "mpleInfo.proto\"\255\001\n\026QueryRegionListHttpRs" +
       "p\022\017\n\007retcode\030\001 \001(\005\022&\n\013region_list\030\002 \003(\0132" +
       "\021.RegionSimpleInfo\022\031\n\021client_secret_key\030" +
       "\005 \001(\014\022&\n\036client_custom_config_encrypted\030" +
-      "\006 \001(\014\022\027\n\017enable_login_pc\030\007 \001(\010B\013\n\tsdkser" +
-      "verb\006proto3"
+      "\006 \001(\014\022\027\n\017enable_login_pc\030\007 \001(\010B\024\n\022org.no" +
+      "fs.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          org.nofs.RegionSimpleInfoOuterClass.getDescriptor(),
+          org.nofs.net.proto.RegionSimpleInfoOuterClass.getDescriptor(),
         });
     internal_static_QueryRegionListHttpRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_QueryRegionListHttpRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QueryRegionListHttpRsp_descriptor,
-        new String[] { "Retcode", "RegionList", "ClientSecretKey", "ClientCustomConfigEncrypted", "EnableLoginPc", });
-    org.nofs.RegionSimpleInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "Retcode", "RegionList", "ClientSecretKey", "ClientCustomConfigEncrypted", "EnableLoginPc", });
+    org.nofs.net.proto.RegionSimpleInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

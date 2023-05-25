@@ -3,8 +3,6 @@
 
 package org.nofs.net.proto;
 
-import org.nofs.org.nofs;
-
 public final class QueryCurrRegionHttpRspOuterClass {
   private QueryCurrRegionHttpRspOuterClass() {}
   public static void registerAllExtensions(
@@ -30,7 +28,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>string msg = 2;</code>
      * @return The msg.
      */
-    String getMsg();
+    java.lang.String getMsg();
     /**
      * <code>string msg = 2;</code>
      * @return The bytes for msg.
@@ -47,11 +45,11 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>.RegionInfo region_info = 3;</code>
      * @return The regionInfo.
      */
-    org.nofs.RegionInfoOuterClass.RegionInfo getRegionInfo();
+    org.nofs.net.proto.RegionInfoOuterClass.RegionInfo getRegionInfo();
     /**
      * <code>.RegionInfo region_info = 3;</code>
      */
-    org.nofs.RegionInfoOuterClass.RegionInfoOrBuilder getRegionInfoOrBuilder();
+    org.nofs.net.proto.RegionInfoOuterClass.RegionInfoOrBuilder getRegionInfoOrBuilder();
 
     /**
      * <code>bytes client_secret_key = 11;</code>
@@ -80,11 +78,11 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>.ForceUpdateInfo force_udpate = 4;</code>
      * @return The forceUdpate.
      */
-    org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUdpate();
+    org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUdpate();
     /**
      * <code>.ForceUpdateInfo force_udpate = 4;</code>
      */
-    org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUdpateOrBuilder();
+    org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUdpateOrBuilder();
 
     /**
      * <code>.StopServerInfo stop_server = 5;</code>
@@ -95,13 +93,13 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>.StopServerInfo stop_server = 5;</code>
      * @return The stopServer.
      */
-    org.nofs.StopServerInfoOuterClass.StopServerInfo getStopServer();
+    org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo getStopServer();
     /**
      * <code>.StopServerInfo stop_server = 5;</code>
      */
-    org.nofs.StopServerInfoOuterClass.StopServerInfoOrBuilder getStopServerOrBuilder();
+    org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfoOrBuilder getStopServerOrBuilder();
 
-    org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.DetailCase getDetailCase();
+    org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.DetailCase getDetailCase();
   }
   /**
    * Protobuf type {@code QueryCurrRegionHttpRsp}
@@ -122,29 +120,29 @@ public final class QueryCurrRegionHttpRspOuterClass {
       clientRegionCustomConfigEncrypted_ = com.google.protobuf.ByteString.EMPTY;
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new QueryCurrRegionHttpRsp();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.nofs.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_descriptor;
+      return org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_descriptor;
     }
 
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.nofs.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_fieldAccessorTable
+      return org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.class, org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.Builder.class);
+              org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.class, org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.Builder.class);
     }
 
     private int detailCase_ = 0;
     @SuppressWarnings("serial")
-    private Object detail_;
+    private java.lang.Object detail_;
     public enum DetailCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -160,7 +158,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * @return The enum associated with the given number.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
-      @Deprecated
+      @java.lang.Deprecated
       public static DetailCase valueOf(int value) {
         return forNumber(value);
       }
@@ -190,27 +188,27 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
-    @Override
+    @java.lang.Override
     public int getRetcode() {
       return retcode_;
     }
 
     public static final int MSG_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
-    private volatile Object msg_ = "";
+    private volatile java.lang.Object msg_ = "";
     /**
      * <code>string msg = 2;</code>
      * @return The msg.
      */
-    @Override
-    public String getMsg() {
-      Object ref = msg_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getMsg() {
+      java.lang.Object ref = msg_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         msg_ = s;
         return s;
       }
@@ -219,14 +217,14 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>string msg = 2;</code>
      * @return The bytes for msg.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getMsgBytes() {
-      Object ref = msg_;
-      if (ref instanceof String) {
+      java.lang.Object ref = msg_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         msg_ = b;
         return b;
       } else {
@@ -235,12 +233,12 @@ public final class QueryCurrRegionHttpRspOuterClass {
     }
 
     public static final int REGION_INFO_FIELD_NUMBER = 3;
-    private org.nofs.RegionInfoOuterClass.RegionInfo regionInfo_;
+    private org.nofs.net.proto.RegionInfoOuterClass.RegionInfo regionInfo_;
     /**
      * <code>.RegionInfo region_info = 3;</code>
      * @return Whether the regionInfo field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasRegionInfo() {
       return regionInfo_ != null;
     }
@@ -248,16 +246,16 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>.RegionInfo region_info = 3;</code>
      * @return The regionInfo.
      */
-    @Override
-    public org.nofs.RegionInfoOuterClass.RegionInfo getRegionInfo() {
-      return regionInfo_ == null ? org.nofs.RegionInfoOuterClass.RegionInfo.getDefaultInstance() : regionInfo_;
+    @java.lang.Override
+    public org.nofs.net.proto.RegionInfoOuterClass.RegionInfo getRegionInfo() {
+      return regionInfo_ == null ? org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.getDefaultInstance() : regionInfo_;
     }
     /**
      * <code>.RegionInfo region_info = 3;</code>
      */
-    @Override
-    public org.nofs.RegionInfoOuterClass.RegionInfoOrBuilder getRegionInfoOrBuilder() {
-      return regionInfo_ == null ? org.nofs.RegionInfoOuterClass.RegionInfo.getDefaultInstance() : regionInfo_;
+    @java.lang.Override
+    public org.nofs.net.proto.RegionInfoOuterClass.RegionInfoOrBuilder getRegionInfoOrBuilder() {
+      return regionInfo_ == null ? org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.getDefaultInstance() : regionInfo_;
     }
 
     public static final int CLIENT_SECRET_KEY_FIELD_NUMBER = 11;
@@ -266,7 +264,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>bytes client_secret_key = 11;</code>
      * @return The clientSecretKey.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getClientSecretKey() {
       return clientSecretKey_;
     }
@@ -277,7 +275,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>bytes region_custom_config_encrypted = 12;</code>
      * @return The regionCustomConfigEncrypted.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getRegionCustomConfigEncrypted() {
       return regionCustomConfigEncrypted_;
     }
@@ -288,7 +286,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>bytes client_region_custom_config_encrypted = 13;</code>
      * @return The clientRegionCustomConfigEncrypted.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString getClientRegionCustomConfigEncrypted() {
       return clientRegionCustomConfigEncrypted_;
     }
@@ -298,7 +296,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>.ForceUpdateInfo force_udpate = 4;</code>
      * @return Whether the forceUdpate field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasForceUdpate() {
       return detailCase_ == 4;
     }
@@ -306,22 +304,22 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>.ForceUpdateInfo force_udpate = 4;</code>
      * @return The forceUdpate.
      */
-    @Override
-    public org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUdpate() {
+    @java.lang.Override
+    public org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUdpate() {
       if (detailCase_ == 4) {
-         return (org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
+         return (org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
       }
-      return org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
+      return org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
     }
     /**
      * <code>.ForceUpdateInfo force_udpate = 4;</code>
      */
-    @Override
-    public org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUdpateOrBuilder() {
+    @java.lang.Override
+    public org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUdpateOrBuilder() {
       if (detailCase_ == 4) {
-         return (org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
+         return (org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
       }
-      return org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
+      return org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
     }
 
     public static final int STOP_SERVER_FIELD_NUMBER = 5;
@@ -329,7 +327,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>.StopServerInfo stop_server = 5;</code>
      * @return Whether the stopServer field is set.
      */
-    @Override
+    @java.lang.Override
     public boolean hasStopServer() {
       return detailCase_ == 5;
     }
@@ -337,26 +335,26 @@ public final class QueryCurrRegionHttpRspOuterClass {
      * <code>.StopServerInfo stop_server = 5;</code>
      * @return The stopServer.
      */
-    @Override
-    public org.nofs.StopServerInfoOuterClass.StopServerInfo getStopServer() {
+    @java.lang.Override
+    public org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo getStopServer() {
       if (detailCase_ == 5) {
-         return (org.nofs.StopServerInfoOuterClass.StopServerInfo) detail_;
+         return (org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) detail_;
       }
-      return org.nofs.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
+      return org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
     }
     /**
      * <code>.StopServerInfo stop_server = 5;</code>
      */
-    @Override
-    public org.nofs.StopServerInfoOuterClass.StopServerInfoOrBuilder getStopServerOrBuilder() {
+    @java.lang.Override
+    public org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfoOrBuilder getStopServerOrBuilder() {
       if (detailCase_ == 5) {
-         return (org.nofs.StopServerInfoOuterClass.StopServerInfo) detail_;
+         return (org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) detail_;
       }
-      return org.nofs.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
+      return org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -366,7 +364,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
@@ -379,10 +377,10 @@ public final class QueryCurrRegionHttpRspOuterClass {
         output.writeMessage(3, getRegionInfo());
       }
       if (detailCase_ == 4) {
-        output.writeMessage(4, (org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_);
+        output.writeMessage(4, (org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_);
       }
       if (detailCase_ == 5) {
-        output.writeMessage(5, (org.nofs.StopServerInfoOuterClass.StopServerInfo) detail_);
+        output.writeMessage(5, (org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) detail_);
       }
       if (!clientSecretKey_.isEmpty()) {
         output.writeBytes(11, clientSecretKey_);
@@ -396,7 +394,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -415,11 +413,11 @@ public final class QueryCurrRegionHttpRspOuterClass {
       }
       if (detailCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, (org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_);
+          .computeMessageSize(4, (org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_);
       }
       if (detailCase_ == 5) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, (org.nofs.StopServerInfoOuterClass.StopServerInfo) detail_);
+          .computeMessageSize(5, (org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) detail_);
       }
       if (!clientSecretKey_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
@@ -438,15 +436,15 @@ public final class QueryCurrRegionHttpRspOuterClass {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp)) {
+      if (!(obj instanceof org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp)) {
         return super.equals(obj);
       }
-      org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp other = (org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp) obj;
+      org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp other = (org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp) obj;
 
       if (getRetcode()
           != other.getRetcode()) return false;
@@ -480,7 +478,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -518,44 +516,44 @@ public final class QueryCurrRegionHttpRspOuterClass {
       return hash;
     }
 
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(byte[] data)
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -563,26 +561,26 @@ public final class QueryCurrRegionHttpRspOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseDelimitedFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseDelimitedFrom(
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -590,21 +588,21 @@ public final class QueryCurrRegionHttpRspOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp prototype) {
+    public static Builder newBuilder(org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -616,21 +614,21 @@ public final class QueryCurrRegionHttpRspOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:QueryCurrRegionHttpRsp)
-        org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRspOrBuilder {
+        org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRspOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.nofs.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_descriptor;
+        return org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.nofs.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_fieldAccessorTable
+        return org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.class, org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.Builder.class);
+                org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.class, org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.Builder.class);
       }
 
-      // Construct using org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.newBuilder()
+      // Construct using org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.newBuilder()
       private Builder() {
 
       }
@@ -640,7 +638,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -665,36 +663,36 @@ public final class QueryCurrRegionHttpRspOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.nofs.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_descriptor;
+        return org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.internal_static_QueryCurrRegionHttpRsp_descriptor;
       }
 
-      @Override
-      public org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp getDefaultInstanceForType() {
-        return org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.getDefaultInstance();
+      @java.lang.Override
+      public org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp getDefaultInstanceForType() {
+        return org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.getDefaultInstance();
       }
 
-      @Override
-      public org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp build() {
-        org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp result = buildPartial();
+      @java.lang.Override
+      public org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp build() {
+        org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp buildPartial() {
-        org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp result = new org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp(this);
+      @java.lang.Override
+      public org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp buildPartial() {
+        org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp result = new org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         buildPartialOneofs(result);
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp result) {
+      private void buildPartial0(org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.retcode_ = retcode_;
@@ -718,7 +716,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
         }
       }
 
-      private void buildPartialOneofs(org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp result) {
+      private void buildPartialOneofs(org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp result) {
         result.detailCase_ = detailCase_;
         result.detail_ = this.detail_;
         if (detailCase_ == 4 &&
@@ -731,18 +729,18 @@ public final class QueryCurrRegionHttpRspOuterClass {
         }
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp) {
-          return mergeFrom((org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp)other);
+        if (other instanceof org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp) {
+          return mergeFrom((org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp other) {
-        if (other == org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp other) {
+        if (other == org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.getDefaultInstance()) return this;
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
@@ -781,18 +779,18 @@ public final class QueryCurrRegionHttpRspOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -864,7 +862,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
         return this;
       }
       private int detailCase_ = 0;
-      private Object detail_;
+      private java.lang.Object detail_;
       public DetailCase
           getDetailCase() {
         return DetailCase.forNumber(
@@ -885,7 +883,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
-      @Override
+      @java.lang.Override
       public int getRetcode() {
         return retcode_;
       }
@@ -912,21 +910,21 @@ public final class QueryCurrRegionHttpRspOuterClass {
         return this;
       }
 
-      private Object msg_ = "";
+      private java.lang.Object msg_ = "";
       /**
        * <code>string msg = 2;</code>
        * @return The msg.
        */
-      public String getMsg() {
-        Object ref = msg_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getMsg() {
+        java.lang.Object ref = msg_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           msg_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -935,11 +933,11 @@ public final class QueryCurrRegionHttpRspOuterClass {
        */
       public com.google.protobuf.ByteString
           getMsgBytes() {
-        Object ref = msg_;
+        java.lang.Object ref = msg_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           msg_ = b;
           return b;
         } else {
@@ -952,7 +950,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMsg(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         msg_ = value;
         bitField0_ |= 0x00000002;
@@ -984,9 +982,9 @@ public final class QueryCurrRegionHttpRspOuterClass {
         return this;
       }
 
-      private org.nofs.RegionInfoOuterClass.RegionInfo regionInfo_;
+      private org.nofs.net.proto.RegionInfoOuterClass.RegionInfo regionInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.RegionInfoOuterClass.RegionInfo, org.nofs.RegionInfoOuterClass.RegionInfo.Builder, org.nofs.RegionInfoOuterClass.RegionInfoOrBuilder> regionInfoBuilder_;
+          org.nofs.net.proto.RegionInfoOuterClass.RegionInfo, org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.Builder, org.nofs.net.proto.RegionInfoOuterClass.RegionInfoOrBuilder> regionInfoBuilder_;
       /**
        * <code>.RegionInfo region_info = 3;</code>
        * @return Whether the regionInfo field is set.
@@ -998,9 +996,9 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>.RegionInfo region_info = 3;</code>
        * @return The regionInfo.
        */
-      public org.nofs.RegionInfoOuterClass.RegionInfo getRegionInfo() {
+      public org.nofs.net.proto.RegionInfoOuterClass.RegionInfo getRegionInfo() {
         if (regionInfoBuilder_ == null) {
-          return regionInfo_ == null ? org.nofs.RegionInfoOuterClass.RegionInfo.getDefaultInstance() : regionInfo_;
+          return regionInfo_ == null ? org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.getDefaultInstance() : regionInfo_;
         } else {
           return regionInfoBuilder_.getMessage();
         }
@@ -1008,7 +1006,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
       /**
        * <code>.RegionInfo region_info = 3;</code>
        */
-      public Builder setRegionInfo(org.nofs.RegionInfoOuterClass.RegionInfo value) {
+      public Builder setRegionInfo(org.nofs.net.proto.RegionInfoOuterClass.RegionInfo value) {
         if (regionInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1025,7 +1023,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>.RegionInfo region_info = 3;</code>
        */
       public Builder setRegionInfo(
-          org.nofs.RegionInfoOuterClass.RegionInfo.Builder builderForValue) {
+          org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.Builder builderForValue) {
         if (regionInfoBuilder_ == null) {
           regionInfo_ = builderForValue.build();
         } else {
@@ -1038,11 +1036,11 @@ public final class QueryCurrRegionHttpRspOuterClass {
       /**
        * <code>.RegionInfo region_info = 3;</code>
        */
-      public Builder mergeRegionInfo(org.nofs.RegionInfoOuterClass.RegionInfo value) {
+      public Builder mergeRegionInfo(org.nofs.net.proto.RegionInfoOuterClass.RegionInfo value) {
         if (regionInfoBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0) &&
             regionInfo_ != null &&
-            regionInfo_ != org.nofs.RegionInfoOuterClass.RegionInfo.getDefaultInstance()) {
+            regionInfo_ != org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.getDefaultInstance()) {
             getRegionInfoBuilder().mergeFrom(value);
           } else {
             regionInfo_ = value;
@@ -1070,7 +1068,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
       /**
        * <code>.RegionInfo region_info = 3;</code>
        */
-      public org.nofs.RegionInfoOuterClass.RegionInfo.Builder getRegionInfoBuilder() {
+      public org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.Builder getRegionInfoBuilder() {
         bitField0_ |= 0x00000004;
         onChanged();
         return getRegionInfoFieldBuilder().getBuilder();
@@ -1078,23 +1076,23 @@ public final class QueryCurrRegionHttpRspOuterClass {
       /**
        * <code>.RegionInfo region_info = 3;</code>
        */
-      public org.nofs.RegionInfoOuterClass.RegionInfoOrBuilder getRegionInfoOrBuilder() {
+      public org.nofs.net.proto.RegionInfoOuterClass.RegionInfoOrBuilder getRegionInfoOrBuilder() {
         if (regionInfoBuilder_ != null) {
           return regionInfoBuilder_.getMessageOrBuilder();
         } else {
           return regionInfo_ == null ?
-              org.nofs.RegionInfoOuterClass.RegionInfo.getDefaultInstance() : regionInfo_;
+              org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.getDefaultInstance() : regionInfo_;
         }
       }
       /**
        * <code>.RegionInfo region_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.RegionInfoOuterClass.RegionInfo, org.nofs.RegionInfoOuterClass.RegionInfo.Builder, org.nofs.RegionInfoOuterClass.RegionInfoOrBuilder> 
+          org.nofs.net.proto.RegionInfoOuterClass.RegionInfo, org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.Builder, org.nofs.net.proto.RegionInfoOuterClass.RegionInfoOrBuilder> 
           getRegionInfoFieldBuilder() {
         if (regionInfoBuilder_ == null) {
           regionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              org.nofs.RegionInfoOuterClass.RegionInfo, org.nofs.RegionInfoOuterClass.RegionInfo.Builder, org.nofs.RegionInfoOuterClass.RegionInfoOrBuilder>(
+              org.nofs.net.proto.RegionInfoOuterClass.RegionInfo, org.nofs.net.proto.RegionInfoOuterClass.RegionInfo.Builder, org.nofs.net.proto.RegionInfoOuterClass.RegionInfoOrBuilder>(
                   getRegionInfo(),
                   getParentForChildren(),
                   isClean());
@@ -1108,7 +1106,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>bytes client_secret_key = 11;</code>
        * @return The clientSecretKey.
        */
-      @Override
+      @java.lang.Override
       public com.google.protobuf.ByteString getClientSecretKey() {
         return clientSecretKey_;
       }
@@ -1140,7 +1138,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>bytes region_custom_config_encrypted = 12;</code>
        * @return The regionCustomConfigEncrypted.
        */
-      @Override
+      @java.lang.Override
       public com.google.protobuf.ByteString getRegionCustomConfigEncrypted() {
         return regionCustomConfigEncrypted_;
       }
@@ -1172,7 +1170,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>bytes client_region_custom_config_encrypted = 13;</code>
        * @return The clientRegionCustomConfigEncrypted.
        */
-      @Override
+      @java.lang.Override
       public com.google.protobuf.ByteString getClientRegionCustomConfigEncrypted() {
         return clientRegionCustomConfigEncrypted_;
       }
@@ -1200,12 +1198,12 @@ public final class QueryCurrRegionHttpRspOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo, org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder> forceUdpateBuilder_;
+          org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo, org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder> forceUdpateBuilder_;
       /**
        * <code>.ForceUpdateInfo force_udpate = 4;</code>
        * @return Whether the forceUdpate field is set.
        */
-      @Override
+      @java.lang.Override
       public boolean hasForceUdpate() {
         return detailCase_ == 4;
       }
@@ -1213,24 +1211,24 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>.ForceUpdateInfo force_udpate = 4;</code>
        * @return The forceUdpate.
        */
-      @Override
-      public org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUdpate() {
+      @java.lang.Override
+      public org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUdpate() {
         if (forceUdpateBuilder_ == null) {
           if (detailCase_ == 4) {
-            return (org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
+            return (org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
           }
-          return org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
+          return org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
         } else {
           if (detailCase_ == 4) {
             return forceUdpateBuilder_.getMessage();
           }
-          return org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
+          return org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
         }
       }
       /**
        * <code>.ForceUpdateInfo force_udpate = 4;</code>
        */
-      public Builder setForceUdpate(org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo value) {
+      public Builder setForceUdpate(org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo value) {
         if (forceUdpateBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1247,7 +1245,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>.ForceUpdateInfo force_udpate = 4;</code>
        */
       public Builder setForceUdpate(
-          org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder builderForValue) {
+          org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder builderForValue) {
         if (forceUdpateBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
@@ -1260,11 +1258,11 @@ public final class QueryCurrRegionHttpRspOuterClass {
       /**
        * <code>.ForceUpdateInfo force_udpate = 4;</code>
        */
-      public Builder mergeForceUdpate(org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo value) {
+      public Builder mergeForceUdpate(org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo value) {
         if (forceUdpateBuilder_ == null) {
           if (detailCase_ == 4 &&
-              detail_ != org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance()) {
-            detail_ = org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.newBuilder((org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_)
+              detail_ != org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance()) {
+            detail_ = org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.newBuilder((org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_)
                 .mergeFrom(value).buildPartial();
           } else {
             detail_ = value;
@@ -1302,36 +1300,36 @@ public final class QueryCurrRegionHttpRspOuterClass {
       /**
        * <code>.ForceUpdateInfo force_udpate = 4;</code>
        */
-      public org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder getForceUdpateBuilder() {
+      public org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder getForceUdpateBuilder() {
         return getForceUdpateFieldBuilder().getBuilder();
       }
       /**
        * <code>.ForceUpdateInfo force_udpate = 4;</code>
        */
-      @Override
-      public org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUdpateOrBuilder() {
+      @java.lang.Override
+      public org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUdpateOrBuilder() {
         if ((detailCase_ == 4) && (forceUdpateBuilder_ != null)) {
           return forceUdpateBuilder_.getMessageOrBuilder();
         } else {
           if (detailCase_ == 4) {
-            return (org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
+            return (org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
           }
-          return org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
+          return org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
         }
       }
       /**
        * <code>.ForceUpdateInfo force_udpate = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo, org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder> 
+          org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo, org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder> 
           getForceUdpateFieldBuilder() {
         if (forceUdpateBuilder_ == null) {
           if (!(detailCase_ == 4)) {
-            detail_ = org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
+            detail_ = org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
           }
           forceUdpateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo, org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder>(
-                  (org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_,
+              org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo, org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder>(
+                  (org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_,
                   getParentForChildren(),
                   isClean());
           detail_ = null;
@@ -1342,12 +1340,12 @@ public final class QueryCurrRegionHttpRspOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.StopServerInfoOuterClass.StopServerInfo, org.nofs.StopServerInfoOuterClass.StopServerInfo.Builder, org.nofs.StopServerInfoOuterClass.StopServerInfoOrBuilder> stopServerBuilder_;
+          org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo, org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.Builder, org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfoOrBuilder> stopServerBuilder_;
       /**
        * <code>.StopServerInfo stop_server = 5;</code>
        * @return Whether the stopServer field is set.
        */
-      @Override
+      @java.lang.Override
       public boolean hasStopServer() {
         return detailCase_ == 5;
       }
@@ -1355,24 +1353,24 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>.StopServerInfo stop_server = 5;</code>
        * @return The stopServer.
        */
-      @Override
-      public org.nofs.StopServerInfoOuterClass.StopServerInfo getStopServer() {
+      @java.lang.Override
+      public org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo getStopServer() {
         if (stopServerBuilder_ == null) {
           if (detailCase_ == 5) {
-            return (org.nofs.StopServerInfoOuterClass.StopServerInfo) detail_;
+            return (org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) detail_;
           }
-          return org.nofs.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
+          return org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
         } else {
           if (detailCase_ == 5) {
             return stopServerBuilder_.getMessage();
           }
-          return org.nofs.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
+          return org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
         }
       }
       /**
        * <code>.StopServerInfo stop_server = 5;</code>
        */
-      public Builder setStopServer(org.nofs.StopServerInfoOuterClass.StopServerInfo value) {
+      public Builder setStopServer(org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo value) {
         if (stopServerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1389,7 +1387,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
        * <code>.StopServerInfo stop_server = 5;</code>
        */
       public Builder setStopServer(
-          org.nofs.StopServerInfoOuterClass.StopServerInfo.Builder builderForValue) {
+          org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.Builder builderForValue) {
         if (stopServerBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
@@ -1402,11 +1400,11 @@ public final class QueryCurrRegionHttpRspOuterClass {
       /**
        * <code>.StopServerInfo stop_server = 5;</code>
        */
-      public Builder mergeStopServer(org.nofs.StopServerInfoOuterClass.StopServerInfo value) {
+      public Builder mergeStopServer(org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo value) {
         if (stopServerBuilder_ == null) {
           if (detailCase_ == 5 &&
-              detail_ != org.nofs.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance()) {
-            detail_ = org.nofs.StopServerInfoOuterClass.StopServerInfo.newBuilder((org.nofs.StopServerInfoOuterClass.StopServerInfo) detail_)
+              detail_ != org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance()) {
+            detail_ = org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.newBuilder((org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) detail_)
                 .mergeFrom(value).buildPartial();
           } else {
             detail_ = value;
@@ -1444,36 +1442,36 @@ public final class QueryCurrRegionHttpRspOuterClass {
       /**
        * <code>.StopServerInfo stop_server = 5;</code>
        */
-      public org.nofs.StopServerInfoOuterClass.StopServerInfo.Builder getStopServerBuilder() {
+      public org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.Builder getStopServerBuilder() {
         return getStopServerFieldBuilder().getBuilder();
       }
       /**
        * <code>.StopServerInfo stop_server = 5;</code>
        */
-      @Override
-      public org.nofs.StopServerInfoOuterClass.StopServerInfoOrBuilder getStopServerOrBuilder() {
+      @java.lang.Override
+      public org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfoOrBuilder getStopServerOrBuilder() {
         if ((detailCase_ == 5) && (stopServerBuilder_ != null)) {
           return stopServerBuilder_.getMessageOrBuilder();
         } else {
           if (detailCase_ == 5) {
-            return (org.nofs.StopServerInfoOuterClass.StopServerInfo) detail_;
+            return (org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) detail_;
           }
-          return org.nofs.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
+          return org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
         }
       }
       /**
        * <code>.StopServerInfo stop_server = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.nofs.StopServerInfoOuterClass.StopServerInfo, org.nofs.StopServerInfoOuterClass.StopServerInfo.Builder, org.nofs.StopServerInfoOuterClass.StopServerInfoOrBuilder> 
+          org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo, org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.Builder, org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfoOrBuilder> 
           getStopServerFieldBuilder() {
         if (stopServerBuilder_ == null) {
           if (!(detailCase_ == 5)) {
-            detail_ = org.nofs.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
+            detail_ = org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
           }
           stopServerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              org.nofs.StopServerInfoOuterClass.StopServerInfo, org.nofs.StopServerInfoOuterClass.StopServerInfo.Builder, org.nofs.StopServerInfoOuterClass.StopServerInfoOrBuilder>(
-                  (org.nofs.StopServerInfoOuterClass.StopServerInfo) detail_,
+              org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo, org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.Builder, org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfoOrBuilder>(
+                  (org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) detail_,
                   getParentForChildren(),
                   isClean());
           detail_ = null;
@@ -1482,13 +1480,13 @@ public final class QueryCurrRegionHttpRspOuterClass {
         onChanged();
         return stopServerBuilder_;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1499,18 +1497,18 @@ public final class QueryCurrRegionHttpRspOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:QueryCurrRegionHttpRsp)
-    private static final org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp DEFAULT_INSTANCE;
+    private static final org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp();
+      DEFAULT_INSTANCE = new org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp();
     }
 
-    public static org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp getDefaultInstance() {
+    public static org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<QueryCurrRegionHttpRsp>
         PARSER = new com.google.protobuf.AbstractParser<QueryCurrRegionHttpRsp>() {
-      @Override
+      @java.lang.Override
       public QueryCurrRegionHttpRsp parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1534,13 +1532,13 @@ public final class QueryCurrRegionHttpRspOuterClass {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<QueryCurrRegionHttpRsp> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public org.nofs.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp getDefaultInstanceForType() {
+    @java.lang.Override
+    public org.nofs.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1559,7 +1557,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\034QueryCurrRegionHttpRsp.proto\032\020RegionIn" +
       "fo.proto\032\025ForceUpdateInfo.proto\032\024StopSer" +
       "verInfo.proto\"\246\002\n\026QueryCurrRegionHttpRsp" +
@@ -1569,25 +1567,25 @@ public final class QueryCurrRegionHttpRspOuterClass {
       "ypted\030\014 \001(\014\022-\n%client_region_custom_conf" +
       "ig_encrypted\030\r \001(\014\022(\n\014force_udpate\030\004 \001(\013" +
       "2\020.ForceUpdateInfoH\000\022&\n\013stop_server\030\005 \001(" +
-      "\0132\017.StopServerInfoH\000B\010\n\006detailB\013\n\tsdkser" +
-      "verb\006proto3"
+      "\0132\017.StopServerInfoH\000B\010\n\006detailB\024\n\022org.no" +
+      "fs.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          org.nofs.RegionInfoOuterClass.getDescriptor(),
-          org.nofs.ForceUpdateInfoOuterClass.getDescriptor(),
-          org.nofs.StopServerInfoOuterClass.getDescriptor(),
+          org.nofs.net.proto.RegionInfoOuterClass.getDescriptor(),
+          org.nofs.net.proto.ForceUpdateInfoOuterClass.getDescriptor(),
+          org.nofs.net.proto.StopServerInfoOuterClass.getDescriptor(),
         });
     internal_static_QueryCurrRegionHttpRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_QueryCurrRegionHttpRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QueryCurrRegionHttpRsp_descriptor,
-        new String[] { "Retcode", "Msg", "RegionInfo", "ClientSecretKey", "RegionCustomConfigEncrypted", "ClientRegionCustomConfigEncrypted", "ForceUdpate", "StopServer", "Detail", });
-    org.nofs.RegionInfoOuterClass.getDescriptor();
-    org.nofs.ForceUpdateInfoOuterClass.getDescriptor();
-    org.nofs.StopServerInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "Retcode", "Msg", "RegionInfo", "ClientSecretKey", "RegionCustomConfigEncrypted", "ClientRegionCustomConfigEncrypted", "ForceUdpate", "StopServer", "Detail", });
+    org.nofs.net.proto.RegionInfoOuterClass.getDescriptor();
+    org.nofs.net.proto.ForceUpdateInfoOuterClass.getDescriptor();
+    org.nofs.net.proto.StopServerInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

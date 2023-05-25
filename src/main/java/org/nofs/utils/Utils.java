@@ -1,13 +1,12 @@
 package org.nofs.utils;
 
-import org.nofs.sdkserver;
-import org.nofs.config.ConfigContainer;
-import org.nofs.data.DataLoader;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufUtil;
 import io.netty.buffer.Unpooled;
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;
+import org.nofs.config.ConfigContainer;
+import org.nofs.data.DataLoader;
 
 import javax.annotation.Nullable;
 import java.io.*;
@@ -137,11 +136,11 @@ public final class Utils {
     }
 
     public static void logObject(Object object) {
-        org.nofs.getLogger().info(JsonUtils.encode(object));
+        org.nofs.sdkserver.getLogger().info(JsonUtils.encode(object));
     }
 
     public static void startupCheck() {
-        ConfigContainer config = org.nofs.getConfig();
+        ConfigContainer config = org.nofs.sdkserver.getConfig();
         String dataFolder = config.folderStructure.data;
         if (!fileExists(dataFolder)) {
             createFolder(dataFolder);
@@ -220,7 +219,7 @@ public final class Utils {
             stream.close();
             reader.close();
         } catch (IOException e) {
-            org.nofs.getLogger().warn("Failed to read from input stream.");
+            org.nofs.sdkserver.getLogger().warn("Failed to read from input stream.");
         } catch (NullPointerException e2) {
             return "empty";
         }
@@ -249,7 +248,7 @@ public final class Utils {
             }
             return 0;
         } catch (IndexOutOfBoundsException e) {
-            org.nofs.getLogger().error("Malformed lerp point array. Must be of form [[x0, y0], ..., [xN, yN]].");
+            org.nofs.sdkserver.getLogger().error("Malformed lerp point array. Must be of form [[x0, y0], ..., [xN, yN]].");
             return 0;
         }
     }

@@ -3,8 +3,6 @@
 
 package org.nofs.net.proto;
 
-import org.nofs.org.nofs;
-
 public final class ForceUpdateInfoOuterClass {
   private ForceUpdateInfoOuterClass() {}
   public static void registerAllExtensions(
@@ -24,7 +22,7 @@ public final class ForceUpdateInfoOuterClass {
      * <code>string force_update_url = 1;</code>
      * @return The forceUpdateUrl.
      */
-    String getForceUpdateUrl();
+    java.lang.String getForceUpdateUrl();
     /**
      * <code>string force_update_url = 1;</code>
      * @return The bytes for forceUpdateUrl.
@@ -48,42 +46,42 @@ public final class ForceUpdateInfoOuterClass {
       forceUpdateUrl_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ForceUpdateInfo();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.nofs.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_descriptor;
+      return org.nofs.net.proto.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_descriptor;
     }
 
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.nofs.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_fieldAccessorTable
+      return org.nofs.net.proto.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.class, org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder.class);
+              org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.class, org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder.class);
     }
 
     public static final int FORCE_UPDATE_URL_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
-    private volatile Object forceUpdateUrl_ = "";
+    private volatile java.lang.Object forceUpdateUrl_ = "";
     /**
      * <code>string force_update_url = 1;</code>
      * @return The forceUpdateUrl.
      */
-    @Override
-    public String getForceUpdateUrl() {
-      Object ref = forceUpdateUrl_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getForceUpdateUrl() {
+      java.lang.Object ref = forceUpdateUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         forceUpdateUrl_ = s;
         return s;
       }
@@ -92,14 +90,14 @@ public final class ForceUpdateInfoOuterClass {
      * <code>string force_update_url = 1;</code>
      * @return The bytes for forceUpdateUrl.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getForceUpdateUrlBytes() {
-      Object ref = forceUpdateUrl_;
-      if (ref instanceof String) {
+      java.lang.Object ref = forceUpdateUrl_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         forceUpdateUrl_ = b;
         return b;
       } else {
@@ -108,7 +106,7 @@ public final class ForceUpdateInfoOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -118,7 +116,7 @@ public final class ForceUpdateInfoOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(forceUpdateUrl_)) {
@@ -127,7 +125,7 @@ public final class ForceUpdateInfoOuterClass {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -141,15 +139,15 @@ public final class ForceUpdateInfoOuterClass {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo)) {
+      if (!(obj instanceof org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo)) {
         return super.equals(obj);
       }
-      org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo other = (org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) obj;
+      org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo other = (org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) obj;
 
       if (!getForceUpdateUrl()
           .equals(other.getForceUpdateUrl())) return false;
@@ -157,7 +155,7 @@ public final class ForceUpdateInfoOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -171,44 +169,44 @@ public final class ForceUpdateInfoOuterClass {
       return hash;
     }
 
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(byte[] data)
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -216,26 +214,26 @@ public final class ForceUpdateInfoOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseDelimitedFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseDelimitedFrom(
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -243,21 +241,21 @@ public final class ForceUpdateInfoOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo prototype) {
+    public static Builder newBuilder(org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -269,21 +267,21 @@ public final class ForceUpdateInfoOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ForceUpdateInfo)
-        org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder {
+        org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.nofs.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_descriptor;
+        return org.nofs.net.proto.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.nofs.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_fieldAccessorTable
+        return org.nofs.net.proto.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.class, org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder.class);
+                org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.class, org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder.class);
       }
 
-      // Construct using org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.newBuilder()
+      // Construct using org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.newBuilder()
       private Builder() {
 
       }
@@ -293,7 +291,7 @@ public final class ForceUpdateInfoOuterClass {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -301,53 +299,53 @@ public final class ForceUpdateInfoOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.nofs.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_descriptor;
+        return org.nofs.net.proto.ForceUpdateInfoOuterClass.internal_static_ForceUpdateInfo_descriptor;
       }
 
-      @Override
-      public org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo getDefaultInstanceForType() {
-        return org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
+      @java.lang.Override
+      public org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getDefaultInstanceForType() {
+        return org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
       }
 
-      @Override
-      public org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo build() {
-        org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo result = buildPartial();
+      @java.lang.Override
+      public org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo build() {
+        org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo buildPartial() {
-        org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo result = new org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo(this);
+      @java.lang.Override
+      public org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo buildPartial() {
+        org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo result = new org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo result) {
+      private void buildPartial0(org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.forceUpdateUrl_ = forceUpdateUrl_;
         }
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo) {
-          return mergeFrom((org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo)other);
+        if (other instanceof org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) {
+          return mergeFrom((org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo other) {
-        if (other == org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo other) {
+        if (other == org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance()) return this;
         if (!other.getForceUpdateUrl().isEmpty()) {
           forceUpdateUrl_ = other.forceUpdateUrl_;
           bitField0_ |= 0x00000001;
@@ -358,18 +356,18 @@ public final class ForceUpdateInfoOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -401,21 +399,21 @@ public final class ForceUpdateInfoOuterClass {
       }
       private int bitField0_;
 
-      private Object forceUpdateUrl_ = "";
+      private java.lang.Object forceUpdateUrl_ = "";
       /**
        * <code>string force_update_url = 1;</code>
        * @return The forceUpdateUrl.
        */
-      public String getForceUpdateUrl() {
-        Object ref = forceUpdateUrl_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getForceUpdateUrl() {
+        java.lang.Object ref = forceUpdateUrl_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           forceUpdateUrl_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -424,11 +422,11 @@ public final class ForceUpdateInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getForceUpdateUrlBytes() {
-        Object ref = forceUpdateUrl_;
+        java.lang.Object ref = forceUpdateUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           forceUpdateUrl_ = b;
           return b;
         } else {
@@ -441,7 +439,7 @@ public final class ForceUpdateInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setForceUpdateUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         forceUpdateUrl_ = value;
         bitField0_ |= 0x00000001;
@@ -472,13 +470,13 @@ public final class ForceUpdateInfoOuterClass {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -489,18 +487,18 @@ public final class ForceUpdateInfoOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:ForceUpdateInfo)
-    private static final org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo DEFAULT_INSTANCE;
+    private static final org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo();
+      DEFAULT_INSTANCE = new org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo();
     }
 
-    public static org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo getDefaultInstance() {
+    public static org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ForceUpdateInfo>
         PARSER = new com.google.protobuf.AbstractParser<ForceUpdateInfo>() {
-      @Override
+      @java.lang.Override
       public ForceUpdateInfo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -524,13 +522,13 @@ public final class ForceUpdateInfoOuterClass {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ForceUpdateInfo> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public org.nofs.ForceUpdateInfoOuterClass.ForceUpdateInfo getDefaultInstanceForType() {
+    @java.lang.Override
+    public org.nofs.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -549,10 +547,10 @@ public final class ForceUpdateInfoOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\025ForceUpdateInfo.proto\"+\n\017ForceUpdateIn" +
-      "fo\022\030\n\020force_update_url\030\001 \001(\tB\013\n\tsdkserve" +
-      "rb\006proto3"
+      "fo\022\030\n\020force_update_url\030\001 \001(\tB\024\n\022org.nofs" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -563,7 +561,7 @@ public final class ForceUpdateInfoOuterClass {
     internal_static_ForceUpdateInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ForceUpdateInfo_descriptor,
-        new String[] { "ForceUpdateUrl", });
+        new java.lang.String[] { "ForceUpdateUrl", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

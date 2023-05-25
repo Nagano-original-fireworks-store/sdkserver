@@ -19,5 +19,5 @@ public class JlineLogbackAppender extends ConsoleAppender<ILoggingEvent> {
         Stream stream = Arrays.stream(new String(this.encoder.encode(eventObject)).split("\n\r"));
         LineReader console = org.nofs.sdkserver.getConsole();
         Objects.requireNonNull(console);
-        stream.forEach(this::printAbove);
+            stream.forEach(this::printAbove);
     }

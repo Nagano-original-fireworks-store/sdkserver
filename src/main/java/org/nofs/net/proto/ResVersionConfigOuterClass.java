@@ -3,8 +3,6 @@
 
 package org.nofs.net.proto;
 
-import org.nofs.org.nofs;
-
 public final class ResVersionConfigOuterClass {
   private ResVersionConfigOuterClass() {}
   public static void registerAllExtensions(
@@ -36,7 +34,7 @@ public final class ResVersionConfigOuterClass {
      * <code>string md5 = 3;</code>
      * @return The md5.
      */
-    String getMd5();
+    java.lang.String getMd5();
     /**
      * <code>string md5 = 3;</code>
      * @return The bytes for md5.
@@ -48,7 +46,7 @@ public final class ResVersionConfigOuterClass {
      * <code>string release_total_size = 4;</code>
      * @return The releaseTotalSize.
      */
-    String getReleaseTotalSize();
+    java.lang.String getReleaseTotalSize();
     /**
      * <code>string release_total_size = 4;</code>
      * @return The bytes for releaseTotalSize.
@@ -60,7 +58,7 @@ public final class ResVersionConfigOuterClass {
      * <code>string version_suffix = 5;</code>
      * @return The versionSuffix.
      */
-    String getVersionSuffix();
+    java.lang.String getVersionSuffix();
     /**
      * <code>string version_suffix = 5;</code>
      * @return The bytes for versionSuffix.
@@ -72,7 +70,7 @@ public final class ResVersionConfigOuterClass {
      * <code>string branch = 6;</code>
      * @return The branch.
      */
-    String getBranch();
+    java.lang.String getBranch();
     /**
      * <code>string branch = 6;</code>
      * @return The bytes for branch.
@@ -84,7 +82,7 @@ public final class ResVersionConfigOuterClass {
      * <code>string next_script_version = 7;</code>
      * @return The nextScriptVersion.
      */
-    String getNextScriptVersion();
+    java.lang.String getNextScriptVersion();
     /**
      * <code>string next_script_version = 7;</code>
      * @return The bytes for nextScriptVersion.
@@ -112,24 +110,24 @@ public final class ResVersionConfigOuterClass {
       nextScriptVersion_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new ResVersionConfig();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.nofs.ResVersionConfigOuterClass.internal_static_ResVersionConfig_descriptor;
+      return org.nofs.net.proto.ResVersionConfigOuterClass.internal_static_ResVersionConfig_descriptor;
     }
 
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.nofs.ResVersionConfigOuterClass.internal_static_ResVersionConfig_fieldAccessorTable
+      return org.nofs.net.proto.ResVersionConfigOuterClass.internal_static_ResVersionConfig_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.nofs.ResVersionConfigOuterClass.ResVersionConfig.class, org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder.class);
+              org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.class, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder.class);
     }
 
     public static final int VERSION_FIELD_NUMBER = 1;
@@ -138,7 +136,7 @@ public final class ResVersionConfigOuterClass {
      * <code>uint32 version = 1;</code>
      * @return The version.
      */
-    @Override
+    @java.lang.Override
     public int getVersion() {
       return version_;
     }
@@ -149,27 +147,27 @@ public final class ResVersionConfigOuterClass {
      * <code>bool relogin = 2;</code>
      * @return The relogin.
      */
-    @Override
+    @java.lang.Override
     public boolean getRelogin() {
       return relogin_;
     }
 
     public static final int MD5_FIELD_NUMBER = 3;
     @SuppressWarnings("serial")
-    private volatile Object md5_ = "";
+    private volatile java.lang.Object md5_ = "";
     /**
      * <code>string md5 = 3;</code>
      * @return The md5.
      */
-    @Override
-    public String getMd5() {
-      Object ref = md5_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getMd5() {
+      java.lang.Object ref = md5_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         md5_ = s;
         return s;
       }
@@ -178,14 +176,14 @@ public final class ResVersionConfigOuterClass {
      * <code>string md5 = 3;</code>
      * @return The bytes for md5.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getMd5Bytes() {
-      Object ref = md5_;
-      if (ref instanceof String) {
+      java.lang.Object ref = md5_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         md5_ = b;
         return b;
       } else {
@@ -195,20 +193,20 @@ public final class ResVersionConfigOuterClass {
 
     public static final int RELEASE_TOTAL_SIZE_FIELD_NUMBER = 4;
     @SuppressWarnings("serial")
-    private volatile Object releaseTotalSize_ = "";
+    private volatile java.lang.Object releaseTotalSize_ = "";
     /**
      * <code>string release_total_size = 4;</code>
      * @return The releaseTotalSize.
      */
-    @Override
-    public String getReleaseTotalSize() {
-      Object ref = releaseTotalSize_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getReleaseTotalSize() {
+      java.lang.Object ref = releaseTotalSize_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         releaseTotalSize_ = s;
         return s;
       }
@@ -217,14 +215,14 @@ public final class ResVersionConfigOuterClass {
      * <code>string release_total_size = 4;</code>
      * @return The bytes for releaseTotalSize.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getReleaseTotalSizeBytes() {
-      Object ref = releaseTotalSize_;
-      if (ref instanceof String) {
+      java.lang.Object ref = releaseTotalSize_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         releaseTotalSize_ = b;
         return b;
       } else {
@@ -234,20 +232,20 @@ public final class ResVersionConfigOuterClass {
 
     public static final int VERSION_SUFFIX_FIELD_NUMBER = 5;
     @SuppressWarnings("serial")
-    private volatile Object versionSuffix_ = "";
+    private volatile java.lang.Object versionSuffix_ = "";
     /**
      * <code>string version_suffix = 5;</code>
      * @return The versionSuffix.
      */
-    @Override
-    public String getVersionSuffix() {
-      Object ref = versionSuffix_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getVersionSuffix() {
+      java.lang.Object ref = versionSuffix_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         versionSuffix_ = s;
         return s;
       }
@@ -256,14 +254,14 @@ public final class ResVersionConfigOuterClass {
      * <code>string version_suffix = 5;</code>
      * @return The bytes for versionSuffix.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getVersionSuffixBytes() {
-      Object ref = versionSuffix_;
-      if (ref instanceof String) {
+      java.lang.Object ref = versionSuffix_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         versionSuffix_ = b;
         return b;
       } else {
@@ -273,20 +271,20 @@ public final class ResVersionConfigOuterClass {
 
     public static final int BRANCH_FIELD_NUMBER = 6;
     @SuppressWarnings("serial")
-    private volatile Object branch_ = "";
+    private volatile java.lang.Object branch_ = "";
     /**
      * <code>string branch = 6;</code>
      * @return The branch.
      */
-    @Override
-    public String getBranch() {
-      Object ref = branch_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getBranch() {
+      java.lang.Object ref = branch_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         branch_ = s;
         return s;
       }
@@ -295,14 +293,14 @@ public final class ResVersionConfigOuterClass {
      * <code>string branch = 6;</code>
      * @return The bytes for branch.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getBranchBytes() {
-      Object ref = branch_;
-      if (ref instanceof String) {
+      java.lang.Object ref = branch_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         branch_ = b;
         return b;
       } else {
@@ -312,20 +310,20 @@ public final class ResVersionConfigOuterClass {
 
     public static final int NEXT_SCRIPT_VERSION_FIELD_NUMBER = 7;
     @SuppressWarnings("serial")
-    private volatile Object nextScriptVersion_ = "";
+    private volatile java.lang.Object nextScriptVersion_ = "";
     /**
      * <code>string next_script_version = 7;</code>
      * @return The nextScriptVersion.
      */
-    @Override
-    public String getNextScriptVersion() {
-      Object ref = nextScriptVersion_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getNextScriptVersion() {
+      java.lang.Object ref = nextScriptVersion_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         nextScriptVersion_ = s;
         return s;
       }
@@ -334,14 +332,14 @@ public final class ResVersionConfigOuterClass {
      * <code>string next_script_version = 7;</code>
      * @return The bytes for nextScriptVersion.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getNextScriptVersionBytes() {
-      Object ref = nextScriptVersion_;
-      if (ref instanceof String) {
+      java.lang.Object ref = nextScriptVersion_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         nextScriptVersion_ = b;
         return b;
       } else {
@@ -350,7 +348,7 @@ public final class ResVersionConfigOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -360,7 +358,7 @@ public final class ResVersionConfigOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (version_ != 0) {
@@ -387,7 +385,7 @@ public final class ResVersionConfigOuterClass {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -421,15 +419,15 @@ public final class ResVersionConfigOuterClass {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.nofs.ResVersionConfigOuterClass.ResVersionConfig)) {
+      if (!(obj instanceof org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig)) {
         return super.equals(obj);
       }
-      org.nofs.ResVersionConfigOuterClass.ResVersionConfig other = (org.nofs.ResVersionConfigOuterClass.ResVersionConfig) obj;
+      org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig other = (org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig) obj;
 
       if (getVersion()
           != other.getVersion()) return false;
@@ -449,7 +447,7 @@ public final class ResVersionConfigOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -476,44 +474,44 @@ public final class ResVersionConfigOuterClass {
       return hash;
     }
 
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(byte[] data)
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -521,26 +519,26 @@ public final class ResVersionConfigOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseDelimitedFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseDelimitedFrom(
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -548,21 +546,21 @@ public final class ResVersionConfigOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.nofs.ResVersionConfigOuterClass.ResVersionConfig prototype) {
+    public static Builder newBuilder(org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -574,21 +572,21 @@ public final class ResVersionConfigOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ResVersionConfig)
-        org.nofs.ResVersionConfigOuterClass.ResVersionConfigOrBuilder {
+        org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.nofs.ResVersionConfigOuterClass.internal_static_ResVersionConfig_descriptor;
+        return org.nofs.net.proto.ResVersionConfigOuterClass.internal_static_ResVersionConfig_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.nofs.ResVersionConfigOuterClass.internal_static_ResVersionConfig_fieldAccessorTable
+        return org.nofs.net.proto.ResVersionConfigOuterClass.internal_static_ResVersionConfig_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.nofs.ResVersionConfigOuterClass.ResVersionConfig.class, org.nofs.ResVersionConfigOuterClass.ResVersionConfig.Builder.class);
+                org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.class, org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder.class);
       }
 
-      // Construct using org.nofs.ResVersionConfigOuterClass.ResVersionConfig.newBuilder()
+      // Construct using org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.newBuilder()
       private Builder() {
 
       }
@@ -598,7 +596,7 @@ public final class ResVersionConfigOuterClass {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -612,35 +610,35 @@ public final class ResVersionConfigOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.nofs.ResVersionConfigOuterClass.internal_static_ResVersionConfig_descriptor;
+        return org.nofs.net.proto.ResVersionConfigOuterClass.internal_static_ResVersionConfig_descriptor;
       }
 
-      @Override
-      public org.nofs.ResVersionConfigOuterClass.ResVersionConfig getDefaultInstanceForType() {
-        return org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance();
+      @java.lang.Override
+      public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig getDefaultInstanceForType() {
+        return org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance();
       }
 
-      @Override
-      public org.nofs.ResVersionConfigOuterClass.ResVersionConfig build() {
-        org.nofs.ResVersionConfigOuterClass.ResVersionConfig result = buildPartial();
+      @java.lang.Override
+      public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig build() {
+        org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public org.nofs.ResVersionConfigOuterClass.ResVersionConfig buildPartial() {
-        org.nofs.ResVersionConfigOuterClass.ResVersionConfig result = new org.nofs.ResVersionConfigOuterClass.ResVersionConfig(this);
+      @java.lang.Override
+      public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig buildPartial() {
+        org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig result = new org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(org.nofs.ResVersionConfigOuterClass.ResVersionConfig result) {
+      private void buildPartial0(org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.version_ = version_;
@@ -665,18 +663,18 @@ public final class ResVersionConfigOuterClass {
         }
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.nofs.ResVersionConfigOuterClass.ResVersionConfig) {
-          return mergeFrom((org.nofs.ResVersionConfigOuterClass.ResVersionConfig)other);
+        if (other instanceof org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig) {
+          return mergeFrom((org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.nofs.ResVersionConfigOuterClass.ResVersionConfig other) {
-        if (other == org.nofs.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig other) {
+        if (other == org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance()) return this;
         if (other.getVersion() != 0) {
           setVersion(other.getVersion());
         }
@@ -713,18 +711,18 @@ public final class ResVersionConfigOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -791,7 +789,7 @@ public final class ResVersionConfigOuterClass {
        * <code>uint32 version = 1;</code>
        * @return The version.
        */
-      @Override
+      @java.lang.Override
       public int getVersion() {
         return version_;
       }
@@ -823,7 +821,7 @@ public final class ResVersionConfigOuterClass {
        * <code>bool relogin = 2;</code>
        * @return The relogin.
        */
-      @Override
+      @java.lang.Override
       public boolean getRelogin() {
         return relogin_;
       }
@@ -850,21 +848,21 @@ public final class ResVersionConfigOuterClass {
         return this;
       }
 
-      private Object md5_ = "";
+      private java.lang.Object md5_ = "";
       /**
        * <code>string md5 = 3;</code>
        * @return The md5.
        */
-      public String getMd5() {
-        Object ref = md5_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getMd5() {
+        java.lang.Object ref = md5_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           md5_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -873,11 +871,11 @@ public final class ResVersionConfigOuterClass {
        */
       public com.google.protobuf.ByteString
           getMd5Bytes() {
-        Object ref = md5_;
+        java.lang.Object ref = md5_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           md5_ = b;
           return b;
         } else {
@@ -890,7 +888,7 @@ public final class ResVersionConfigOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMd5(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         md5_ = value;
         bitField0_ |= 0x00000004;
@@ -922,21 +920,21 @@ public final class ResVersionConfigOuterClass {
         return this;
       }
 
-      private Object releaseTotalSize_ = "";
+      private java.lang.Object releaseTotalSize_ = "";
       /**
        * <code>string release_total_size = 4;</code>
        * @return The releaseTotalSize.
        */
-      public String getReleaseTotalSize() {
-        Object ref = releaseTotalSize_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getReleaseTotalSize() {
+        java.lang.Object ref = releaseTotalSize_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           releaseTotalSize_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -945,11 +943,11 @@ public final class ResVersionConfigOuterClass {
        */
       public com.google.protobuf.ByteString
           getReleaseTotalSizeBytes() {
-        Object ref = releaseTotalSize_;
+        java.lang.Object ref = releaseTotalSize_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           releaseTotalSize_ = b;
           return b;
         } else {
@@ -962,7 +960,7 @@ public final class ResVersionConfigOuterClass {
        * @return This builder for chaining.
        */
       public Builder setReleaseTotalSize(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         releaseTotalSize_ = value;
         bitField0_ |= 0x00000008;
@@ -994,21 +992,21 @@ public final class ResVersionConfigOuterClass {
         return this;
       }
 
-      private Object versionSuffix_ = "";
+      private java.lang.Object versionSuffix_ = "";
       /**
        * <code>string version_suffix = 5;</code>
        * @return The versionSuffix.
        */
-      public String getVersionSuffix() {
-        Object ref = versionSuffix_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getVersionSuffix() {
+        java.lang.Object ref = versionSuffix_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           versionSuffix_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1017,11 +1015,11 @@ public final class ResVersionConfigOuterClass {
        */
       public com.google.protobuf.ByteString
           getVersionSuffixBytes() {
-        Object ref = versionSuffix_;
+        java.lang.Object ref = versionSuffix_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           versionSuffix_ = b;
           return b;
         } else {
@@ -1034,7 +1032,7 @@ public final class ResVersionConfigOuterClass {
        * @return This builder for chaining.
        */
       public Builder setVersionSuffix(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         versionSuffix_ = value;
         bitField0_ |= 0x00000010;
@@ -1066,21 +1064,21 @@ public final class ResVersionConfigOuterClass {
         return this;
       }
 
-      private Object branch_ = "";
+      private java.lang.Object branch_ = "";
       /**
        * <code>string branch = 6;</code>
        * @return The branch.
        */
-      public String getBranch() {
-        Object ref = branch_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getBranch() {
+        java.lang.Object ref = branch_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           branch_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1089,11 +1087,11 @@ public final class ResVersionConfigOuterClass {
        */
       public com.google.protobuf.ByteString
           getBranchBytes() {
-        Object ref = branch_;
+        java.lang.Object ref = branch_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           branch_ = b;
           return b;
         } else {
@@ -1106,7 +1104,7 @@ public final class ResVersionConfigOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBranch(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         branch_ = value;
         bitField0_ |= 0x00000020;
@@ -1138,21 +1136,21 @@ public final class ResVersionConfigOuterClass {
         return this;
       }
 
-      private Object nextScriptVersion_ = "";
+      private java.lang.Object nextScriptVersion_ = "";
       /**
        * <code>string next_script_version = 7;</code>
        * @return The nextScriptVersion.
        */
-      public String getNextScriptVersion() {
-        Object ref = nextScriptVersion_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getNextScriptVersion() {
+        java.lang.Object ref = nextScriptVersion_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           nextScriptVersion_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1161,11 +1159,11 @@ public final class ResVersionConfigOuterClass {
        */
       public com.google.protobuf.ByteString
           getNextScriptVersionBytes() {
-        Object ref = nextScriptVersion_;
+        java.lang.Object ref = nextScriptVersion_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           nextScriptVersion_ = b;
           return b;
         } else {
@@ -1178,7 +1176,7 @@ public final class ResVersionConfigOuterClass {
        * @return This builder for chaining.
        */
       public Builder setNextScriptVersion(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         nextScriptVersion_ = value;
         bitField0_ |= 0x00000040;
@@ -1209,13 +1207,13 @@ public final class ResVersionConfigOuterClass {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1226,18 +1224,18 @@ public final class ResVersionConfigOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:ResVersionConfig)
-    private static final org.nofs.ResVersionConfigOuterClass.ResVersionConfig DEFAULT_INSTANCE;
+    private static final org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.nofs.ResVersionConfigOuterClass.ResVersionConfig();
+      DEFAULT_INSTANCE = new org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig();
     }
 
-    public static org.nofs.ResVersionConfigOuterClass.ResVersionConfig getDefaultInstance() {
+    public static org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<ResVersionConfig>
         PARSER = new com.google.protobuf.AbstractParser<ResVersionConfig>() {
-      @Override
+      @java.lang.Override
       public ResVersionConfig parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1261,13 +1259,13 @@ public final class ResVersionConfigOuterClass {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<ResVersionConfig> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public org.nofs.ResVersionConfigOuterClass.ResVersionConfig getDefaultInstanceForType() {
+    @java.lang.Override
+    public org.nofs.net.proto.ResVersionConfigOuterClass.ResVersionConfig getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1286,13 +1284,13 @@ public final class ResVersionConfigOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\026ResVersionConfig.proto\"\242\001\n\020ResVersionC" +
       "onfig\022\017\n\007version\030\001 \001(\r\022\017\n\007relogin\030\002 \001(\010\022" +
       "\013\n\003md5\030\003 \001(\t\022\032\n\022release_total_size\030\004 \001(\t" +
       "\022\026\n\016version_suffix\030\005 \001(\t\022\016\n\006branch\030\006 \001(\t" +
-      "\022\033\n\023next_script_version\030\007 \001(\tB\013\n\tsdkserv" +
-      "erb\006proto3"
+      "\022\033\n\023next_script_version\030\007 \001(\tB\024\n\022org.nof" +
+      "s.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1303,7 +1301,7 @@ public final class ResVersionConfigOuterClass {
     internal_static_ResVersionConfig_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ResVersionConfig_descriptor,
-        new String[] { "Version", "Relogin", "Md5", "ReleaseTotalSize", "VersionSuffix", "Branch", "NextScriptVersion", });
+        new java.lang.String[] { "Version", "Relogin", "Md5", "ReleaseTotalSize", "VersionSuffix", "Branch", "NextScriptVersion", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

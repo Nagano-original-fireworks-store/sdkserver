@@ -3,8 +3,6 @@
 
 package org.nofs.net.proto;
 
-import org.nofs.org.nofs;
-
 public final class StopServerInfoOuterClass {
   private StopServerInfoOuterClass() {}
   public static void registerAllExtensions(
@@ -36,7 +34,7 @@ public final class StopServerInfoOuterClass {
      * <code>string url = 3;</code>
      * @return The url.
      */
-    String getUrl();
+    java.lang.String getUrl();
     /**
      * <code>string url = 3;</code>
      * @return The bytes for url.
@@ -48,7 +46,7 @@ public final class StopServerInfoOuterClass {
      * <code>string content_msg = 4;</code>
      * @return The contentMsg.
      */
-    String getContentMsg();
+    java.lang.String getContentMsg();
     /**
      * <code>string content_msg = 4;</code>
      * @return The bytes for contentMsg.
@@ -73,24 +71,24 @@ public final class StopServerInfoOuterClass {
       contentMsg_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new StopServerInfo();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.nofs.StopServerInfoOuterClass.internal_static_StopServerInfo_descriptor;
+      return org.nofs.net.proto.StopServerInfoOuterClass.internal_static_StopServerInfo_descriptor;
     }
 
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.nofs.StopServerInfoOuterClass.internal_static_StopServerInfo_fieldAccessorTable
+      return org.nofs.net.proto.StopServerInfoOuterClass.internal_static_StopServerInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.nofs.StopServerInfoOuterClass.StopServerInfo.class, org.nofs.StopServerInfoOuterClass.StopServerInfo.Builder.class);
+              org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.class, org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.Builder.class);
     }
 
     public static final int STOP_BEGIN_TIME_FIELD_NUMBER = 1;
@@ -99,7 +97,7 @@ public final class StopServerInfoOuterClass {
      * <code>uint32 stop_begin_time = 1;</code>
      * @return The stopBeginTime.
      */
-    @Override
+    @java.lang.Override
     public int getStopBeginTime() {
       return stopBeginTime_;
     }
@@ -110,27 +108,27 @@ public final class StopServerInfoOuterClass {
      * <code>uint32 stop_end_time = 2;</code>
      * @return The stopEndTime.
      */
-    @Override
+    @java.lang.Override
     public int getStopEndTime() {
       return stopEndTime_;
     }
 
     public static final int URL_FIELD_NUMBER = 3;
     @SuppressWarnings("serial")
-    private volatile Object url_ = "";
+    private volatile java.lang.Object url_ = "";
     /**
      * <code>string url = 3;</code>
      * @return The url.
      */
-    @Override
-    public String getUrl() {
-      Object ref = url_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getUrl() {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         url_ = s;
         return s;
       }
@@ -139,14 +137,14 @@ public final class StopServerInfoOuterClass {
      * <code>string url = 3;</code>
      * @return The bytes for url.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getUrlBytes() {
-      Object ref = url_;
-      if (ref instanceof String) {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         url_ = b;
         return b;
       } else {
@@ -156,20 +154,20 @@ public final class StopServerInfoOuterClass {
 
     public static final int CONTENT_MSG_FIELD_NUMBER = 4;
     @SuppressWarnings("serial")
-    private volatile Object contentMsg_ = "";
+    private volatile java.lang.Object contentMsg_ = "";
     /**
      * <code>string content_msg = 4;</code>
      * @return The contentMsg.
      */
-    @Override
-    public String getContentMsg() {
-      Object ref = contentMsg_;
-      if (ref instanceof String) {
-        return (String) ref;
+    @java.lang.Override
+    public java.lang.String getContentMsg() {
+      java.lang.Object ref = contentMsg_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         contentMsg_ = s;
         return s;
       }
@@ -178,14 +176,14 @@ public final class StopServerInfoOuterClass {
      * <code>string content_msg = 4;</code>
      * @return The bytes for contentMsg.
      */
-    @Override
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getContentMsgBytes() {
-      Object ref = contentMsg_;
-      if (ref instanceof String) {
+      java.lang.Object ref = contentMsg_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         contentMsg_ = b;
         return b;
       } else {
@@ -194,7 +192,7 @@ public final class StopServerInfoOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -204,7 +202,7 @@ public final class StopServerInfoOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (stopBeginTime_ != 0) {
@@ -222,7 +220,7 @@ public final class StopServerInfoOuterClass {
       getUnknownFields().writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -247,15 +245,15 @@ public final class StopServerInfoOuterClass {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.nofs.StopServerInfoOuterClass.StopServerInfo)) {
+      if (!(obj instanceof org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo)) {
         return super.equals(obj);
       }
-      org.nofs.StopServerInfoOuterClass.StopServerInfo other = (org.nofs.StopServerInfoOuterClass.StopServerInfo) obj;
+      org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo other = (org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) obj;
 
       if (getStopBeginTime()
           != other.getStopBeginTime()) return false;
@@ -269,7 +267,7 @@ public final class StopServerInfoOuterClass {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -289,44 +287,44 @@ public final class StopServerInfoOuterClass {
       return hash;
     }
 
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(byte[] data)
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -334,26 +332,26 @@ public final class StopServerInfoOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseDelimitedFrom(java.io.InputStream input)
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseDelimitedFrom(
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo parseFrom(
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -361,21 +359,21 @@ public final class StopServerInfoOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.nofs.StopServerInfoOuterClass.StopServerInfo prototype) {
+    public static Builder newBuilder(org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -387,21 +385,21 @@ public final class StopServerInfoOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:StopServerInfo)
-        org.nofs.StopServerInfoOuterClass.StopServerInfoOrBuilder {
+        org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.nofs.StopServerInfoOuterClass.internal_static_StopServerInfo_descriptor;
+        return org.nofs.net.proto.StopServerInfoOuterClass.internal_static_StopServerInfo_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.nofs.StopServerInfoOuterClass.internal_static_StopServerInfo_fieldAccessorTable
+        return org.nofs.net.proto.StopServerInfoOuterClass.internal_static_StopServerInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.nofs.StopServerInfoOuterClass.StopServerInfo.class, org.nofs.StopServerInfoOuterClass.StopServerInfo.Builder.class);
+                org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.class, org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.Builder.class);
       }
 
-      // Construct using org.nofs.StopServerInfoOuterClass.StopServerInfo.newBuilder()
+      // Construct using org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.newBuilder()
       private Builder() {
 
       }
@@ -411,7 +409,7 @@ public final class StopServerInfoOuterClass {
         super(parent);
 
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
@@ -422,35 +420,35 @@ public final class StopServerInfoOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.nofs.StopServerInfoOuterClass.internal_static_StopServerInfo_descriptor;
+        return org.nofs.net.proto.StopServerInfoOuterClass.internal_static_StopServerInfo_descriptor;
       }
 
-      @Override
-      public org.nofs.StopServerInfoOuterClass.StopServerInfo getDefaultInstanceForType() {
-        return org.nofs.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
+      @java.lang.Override
+      public org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo getDefaultInstanceForType() {
+        return org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance();
       }
 
-      @Override
-      public org.nofs.StopServerInfoOuterClass.StopServerInfo build() {
-        org.nofs.StopServerInfoOuterClass.StopServerInfo result = buildPartial();
+      @java.lang.Override
+      public org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo build() {
+        org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public org.nofs.StopServerInfoOuterClass.StopServerInfo buildPartial() {
-        org.nofs.StopServerInfoOuterClass.StopServerInfo result = new org.nofs.StopServerInfoOuterClass.StopServerInfo(this);
+      @java.lang.Override
+      public org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo buildPartial() {
+        org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo result = new org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(org.nofs.StopServerInfoOuterClass.StopServerInfo result) {
+      private void buildPartial0(org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.stopBeginTime_ = stopBeginTime_;
@@ -466,18 +464,18 @@ public final class StopServerInfoOuterClass {
         }
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.nofs.StopServerInfoOuterClass.StopServerInfo) {
-          return mergeFrom((org.nofs.StopServerInfoOuterClass.StopServerInfo)other);
+        if (other instanceof org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo) {
+          return mergeFrom((org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.nofs.StopServerInfoOuterClass.StopServerInfo other) {
-        if (other == org.nofs.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo other) {
+        if (other == org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo.getDefaultInstance()) return this;
         if (other.getStopBeginTime() != 0) {
           setStopBeginTime(other.getStopBeginTime());
         }
@@ -499,18 +497,18 @@ public final class StopServerInfoOuterClass {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         try {
           boolean done = false;
@@ -562,7 +560,7 @@ public final class StopServerInfoOuterClass {
        * <code>uint32 stop_begin_time = 1;</code>
        * @return The stopBeginTime.
        */
-      @Override
+      @java.lang.Override
       public int getStopBeginTime() {
         return stopBeginTime_;
       }
@@ -594,7 +592,7 @@ public final class StopServerInfoOuterClass {
        * <code>uint32 stop_end_time = 2;</code>
        * @return The stopEndTime.
        */
-      @Override
+      @java.lang.Override
       public int getStopEndTime() {
         return stopEndTime_;
       }
@@ -621,21 +619,21 @@ public final class StopServerInfoOuterClass {
         return this;
       }
 
-      private Object url_ = "";
+      private java.lang.Object url_ = "";
       /**
        * <code>string url = 3;</code>
        * @return The url.
        */
-      public String getUrl() {
-        Object ref = url_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUrl() {
+        java.lang.Object ref = url_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           url_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -644,11 +642,11 @@ public final class StopServerInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getUrlBytes() {
-        Object ref = url_;
+        java.lang.Object ref = url_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           url_ = b;
           return b;
         } else {
@@ -661,7 +659,7 @@ public final class StopServerInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         url_ = value;
         bitField0_ |= 0x00000004;
@@ -693,21 +691,21 @@ public final class StopServerInfoOuterClass {
         return this;
       }
 
-      private Object contentMsg_ = "";
+      private java.lang.Object contentMsg_ = "";
       /**
        * <code>string content_msg = 4;</code>
        * @return The contentMsg.
        */
-      public String getContentMsg() {
-        Object ref = contentMsg_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getContentMsg() {
+        java.lang.Object ref = contentMsg_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           contentMsg_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -716,11 +714,11 @@ public final class StopServerInfoOuterClass {
        */
       public com.google.protobuf.ByteString
           getContentMsgBytes() {
-        Object ref = contentMsg_;
+        java.lang.Object ref = contentMsg_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           contentMsg_ = b;
           return b;
         } else {
@@ -733,7 +731,7 @@ public final class StopServerInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setContentMsg(
-          String value) {
+          java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         contentMsg_ = value;
         bitField0_ |= 0x00000008;
@@ -764,13 +762,13 @@ public final class StopServerInfoOuterClass {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -781,18 +779,18 @@ public final class StopServerInfoOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:StopServerInfo)
-    private static final org.nofs.StopServerInfoOuterClass.StopServerInfo DEFAULT_INSTANCE;
+    private static final org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.nofs.StopServerInfoOuterClass.StopServerInfo();
+      DEFAULT_INSTANCE = new org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo();
     }
 
-    public static org.nofs.StopServerInfoOuterClass.StopServerInfo getDefaultInstance() {
+    public static org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<StopServerInfo>
         PARSER = new com.google.protobuf.AbstractParser<StopServerInfo>() {
-      @Override
+      @java.lang.Override
       public StopServerInfo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -816,13 +814,13 @@ public final class StopServerInfoOuterClass {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<StopServerInfo> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public org.nofs.StopServerInfoOuterClass.StopServerInfo getDefaultInstanceForType() {
+    @java.lang.Override
+    public org.nofs.net.proto.StopServerInfoOuterClass.StopServerInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -841,11 +839,11 @@ public final class StopServerInfoOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\024StopServerInfo.proto\"b\n\016StopServerInfo" +
       "\022\027\n\017stop_begin_time\030\001 \001(\r\022\025\n\rstop_end_ti" +
       "me\030\002 \001(\r\022\013\n\003url\030\003 \001(\t\022\023\n\013content_msg\030\004 \001" +
-      "(\tB\013\n\torg.nofsb\006proto3"
+      "(\tB\024\n\022org.nofs.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -856,7 +854,7 @@ public final class StopServerInfoOuterClass {
     internal_static_StopServerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StopServerInfo_descriptor,
-        new String[] { "StopBeginTime", "StopEndTime", "Url", "ContentMsg", });
+        new java.lang.String[] { "StopBeginTime", "StopEndTime", "Url", "ContentMsg", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
