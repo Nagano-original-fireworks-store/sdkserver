@@ -1,22 +1,16 @@
 package org.nofs.game;
 
-import dev.morphia.annotations.Collation;
-import dev.morphia.annotations.Entity;
-import dev.morphia.annotations.Id;
-import dev.morphia.annotations.IndexOptions;
-import dev.morphia.annotations.Indexed;
-import dev.morphia.annotations.PreLoad;
+import dev.morphia.annotations.*;
+import org.bson.Document;
+import org.eclipse.jetty.util.security.Constraint;
 import org.nofs.config.Configuration;
 import org.nofs.database.DatabaseHelper;
 import org.nofs.utils.Crypto;
 import org.nofs.utils.Utils;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
-import java.util.stream.Stream;
-import org.bson.Document;
-import org.eclipse.jetty.util.security.Constraint;
 
 @Entity(value = "accounts", useDiscriminator = false)
 /* loaded from: org.nofs.jar:emu/grasscutter/game/Account.class */
@@ -207,30 +201,30 @@ public class Account {
         return wildcardParts.length == permissionParts.length;
     }
 
-    public boolean hasPermission(String permission) {
-        if (permission.isEmpty()) {
-            return true;
-        }
-        if (this.permissions.contains("*") && this.permissions.size() == 1) {
-            return true;
-        }
-        List<String> permissions = Stream.of((Object[]) new List[]{this.permissions, Arrays.asList(Configuration.ACCOUNT.defaultPermissions)}).flatMap((v0) -> {
-            return v0.stream();
-        }).distinct().toList();
-        if (permissions.contains(permission)) {
-            return true;
-        }
-        String[] permissionParts = permission.split("\\.");
-        for (String p : permissions) {
-            if (p.startsWith("-") && permissionMatchesWildcard(p.substring(1), permissionParts)) {
-                return false;
-            }
-            if (permissionMatchesWildcard(p, permissionParts)) {
-                return true;
-            }
-        }
-        return permissions.contains("*");
-    }
+//    public boolean hasPermission(String permission) {
+//        if (permission.isEmpty()) {
+//            return true;
+//        }
+//        if (this.permissions.contains("*") && this.permissions.size() == 1) {
+//            return true;
+//        }
+//        List<String> permissions = Stream.of((Object[]) new List[]{this.permissions, Arrays.asList(Configuration.ACCOUNT.defaultPermissions)}).flatMap((v0) -> {
+//            return v0.stream();
+//        }).distinct().toList();
+//        if (permissions.contains(permission)) {
+//            return true;
+//        }
+//        String[] permissionParts = permission.split("\\.");
+//        for (String p : permissions) {
+//            if (p.startsWith("-") && permissionMatchesWildcard(p.substring(1), permissionParts)) {
+//                return false;
+//            }
+//            if (permissionMatchesWildcard(p, permissionParts)) {
+//                return true;
+//            }
+//        }
+//        return permissions.contains("*");
+//    }
 
     public boolean removePermission(String permission) {
         return this.permissions.remove(permission);

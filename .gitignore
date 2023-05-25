@@ -43,3 +43,7 @@ bin/
 ### Mac OS ###
 .DS_Store
 /gradle/
+### sdk ###
+config.json
+data
+logs

@@ -2,10 +2,9 @@ package org.nofs.utils;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import org.nofs.sdkserver;
-import org.nofs.config.Configuration;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
+import org.nofs.config.Configuration;
 
 import java.io.InputStream;
 import java.io.Serializable;
@@ -187,18 +186,16 @@ public final class Language {
         public static final String[] ARR_GC_LANGUAGES = {"en-US", "zh-CN", "zh-TW", "ja-JP", "ko-KR", "en-US", "es-ES", "fr-FR", "en-US", "en-US", "ru-RU", "en-US", "en-US"};
         public static final int NUM_LANGUAGES = ARR_LANGUAGES.length;
         public static final List<String> LIST_LANGUAGES = Arrays.asList(ARR_LANGUAGES);
-        public static final Object2IntMap<String> MAP_LANGUAGES = new Object2IntOpenHashMap((Map) IntStream.range(0, ARR_LANGUAGES.length).boxed().collect(Collectors.toMap(i -> {
-            return ARR_LANGUAGES[i.intValue()];
-        }, i2 -> {
-            return i2;
-        })));
-        public static final Object2IntMap<String> MAP_GC_LANGUAGES = new Object2IntOpenHashMap((Map) IntStream.range(0, ARR_GC_LANGUAGES.length).boxed().collect(Collectors.toMap(i -> {
-            return ARR_GC_LANGUAGES[i.intValue()];
-        }, i2 -> {
-            return i2;
-        }, i1, i22 -> {
-            return i1;
-        })));
+        public static final Object2IntMap<String> MAP_LANGUAGES =  // Map "EN": 0, "CHS": 1, ..., "VI": 12
+                new Object2IntOpenHashMap<>(
+                        IntStream.range(0, ARR_LANGUAGES.length)
+                                .boxed()
+                                .collect(Collectors.toMap(i -> ARR_LANGUAGES[i], i -> i)));
+        public static final Object2IntMap<String> MAP_GC_LANGUAGES =  // Map "en-US": 0, "zh-CN": 1, ...
+                new Object2IntOpenHashMap<>(
+                        IntStream.range(0, ARR_GC_LANGUAGES.length)
+                                .boxed()
+                                .collect(Collectors.toMap(i -> ARR_GC_LANGUAGES[i], i -> i, (i1, i2) -> i1)));
         public String[] strings;
 
         public boolean equals(Object o) {

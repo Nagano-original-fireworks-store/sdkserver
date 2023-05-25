@@ -74,7 +74,7 @@ public final class FileUtils {
         return fileName;
     }
 
-    public static List<Path> getPathsFromResource(String folder) throws URISyntaxException {
+    public static List getPathsFromResource(String folder) throws URISyntaxException {
         try {
             return (List) Files.walk(Path.of(org.nofs.sdkserver.class.getResource(folder).toURI()), new FileVisitOption[0]).filter(x$0 -> {
                 return Files.isRegularFile(x$0, new LinkOption[0]);
