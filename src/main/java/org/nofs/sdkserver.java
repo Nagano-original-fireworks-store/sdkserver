@@ -30,10 +30,7 @@ import org.reflections.scanners.Scanner;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nullable;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOError;
-import java.io.IOException;
+import java.io.*;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -96,7 +93,7 @@ public final class sdkserver {
             System.exit(0);
         }
         getLogger().info(Language.translate("messages.status.starting", new Object[0]));
-//        getLogger().info(Language.translate("messages.status.game_version", GameConstants.VERSION));
+        getLogger().info(Language.translate("messages.status.game_version", GameConstants.VERSION));
 //        getLogger().info(Language.translate("messages.status.version", BuildConfig.VERSION, BuildConfig.GIT_HASH));
         DatabaseManager.initialize();
         authenticationSystem = new DefaultAuthentication();
@@ -111,7 +108,7 @@ public final class sdkserver {
         httpServer.start();
         Runtime.getRuntime().addShutdownHook(new Thread(sdkserver::onShutdown));
         startConsole();
-//        log.info();
+        log.info("messages.status.starting");
     }
 
     private static void onShutdown() {
@@ -228,9 +225,15 @@ public final class sdkserver {
     }
 
     private static void onInput(String input) {
+//        Console console = System.console();
+
+//        if (input != null && input.equalsIgnoreCase("\u0003")) {
+//            getLogger().info(Language.translate("messages.status.shutdown"));
+//            System.exit(0);
+//        }
         if (input.equals("stop")) {
-            getLogger().info("Stop sdkserver.server...");
-            System.exit(1000);
+            getLogger().info(Language.translate("messages.status.shutdown"));
+            System.exit(0);
         }
         if (input.equals("reload")) {
             loadConfig();

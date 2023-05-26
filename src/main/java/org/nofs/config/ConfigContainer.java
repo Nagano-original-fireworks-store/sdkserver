@@ -32,7 +32,7 @@ public class ConfigContainer {
         /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Database$DataStore.class */
         public static class DataStore {
             public String connectionUri = "mongodb://localhost:27017";
-            public String collection = "org.nofs";
+            public String collection = "NOFS";
         }
     }
 
@@ -86,10 +86,11 @@ public class ConfigContainer {
 
     /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Region.class */
     public static class Region {
-        public String Name = "os_usa";
-        public String Title = "org.nofs";
+        public String Name = "dev_client";
+        public String Title = "NOFS";
         public String type = "DEV_PUBLIC";
         public String DispatchUrl = "https://127.0.0.1:20001/query_cur_region";
+
     }
 
     /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Server.class */

@@ -1,5 +1,7 @@
 package org.nofs.utils;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.security.KeyFactory;
 import java.security.PrivateKey;
 import java.security.PublicKey;
@@ -15,6 +17,7 @@ import java.util.regex.Pattern;
 
 /* loaded from: org.nofs.jar:emu/org.nofs/utils/Crypto.class */
 public final class Crypto {
+
     public static byte[] DISPATCH_KEY;
     public static byte[] DISPATCH_SEED;
     public static byte[] ENCRYPT_KEY;
@@ -24,10 +27,10 @@ public final class Crypto {
     public static Map<Integer, PublicKey> EncryptionKeys = new HashMap();
 
     public static void loadKeys() {
-        DISPATCH_KEY = FileUtils.readResource("/keys/dispatchKey.bin");
-        DISPATCH_SEED = FileUtils.readResource("/keys/dispatchSeed.bin");
-        ENCRYPT_KEY = FileUtils.readResource("/keys/secretKey.bin");
-        ENCRYPT_SEED_BUFFER = FileUtils.readResource("/keys/secretKeyBuffer.bin");
+        DISPATCH_KEY = readResourceFromJar("/keys/dispatchKey.bin");
+        DISPATCH_SEED = readResourceFromJar("/keys/dispatchSeed.bin");
+        ENCRYPT_KEY = readResourceFromJar("/keys/secretKey.bin");
+        ENCRYPT_SEED_BUFFER = readResourceFromJar("/keys/secretKeyBuffer.bin");
         try {
             CUR_SIGNING_KEY = KeyFactory.getInstance("RSA").generatePrivate(new PKCS8EncodedKeySpec(FileUtils.readResource("/keys/SigningKey.der")));
             Pattern pattern = Pattern.compile("([0-9]*)_Pub\\.der");
@@ -35,7 +38,7 @@ public final class Crypto {
                 if (path.toString().endsWith("_Pub.der")) {
                     Matcher m = pattern.matcher(path.getClass().toString());
                     if (m.matches()) {
-                        PublicKey key = KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(FileUtils.read((String) path)));
+                        PublicKey key = KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(readResourceFromJar((String) path)));
                         EncryptionKeys.put(Integer.valueOf(m.group(1)), key);
                     }
                 }
@@ -44,6 +47,19 @@ public final class Crypto {
             org.nofs.sdkserver.getLogger().error("An error occurred while loading keys.", (Throwable) e);
         }
     }
+
+    private static byte[] readResourceFromJar(String resourcePath) {
+        try (InputStream inputStream = Crypto.class.getClassLoader().getResourceAsStream(resourcePath)) {
+            if (inputStream != null) {
+                return inputStream.readAllBytes();
+            }
+        } catch (IOException e) {
+            org.nofs.sdkserver.getLogger().error("Failed to read resource: " + resourcePath, e);
+        }
+        return null;
+    }
+
+
 
     public static void xor(byte[] packet, byte[] key) {
         for (int i = 0; i < packet.length; i++) {

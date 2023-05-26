@@ -46,25 +46,9 @@ public final class Language {
         String translated = org.nofs.sdkserver.getLanguage().get(key);
         for (int i = 0; i < args.length; i++) {
             int i2 = i;
-            String simpleName = args[i].getClass().getSimpleName();
-            boolean z = true;
-            switch (simpleName.hashCode()) {
-                case -1808118735:
-                    if (simpleName.equals("String")) {
-                        z = false;
-                        break;
-                    }
-                    break;
-                case -1053826955:
-                    if (simpleName.equals("TextStrings")) {
-                        z = true;
-                        break;
-                    }
-                    break;
-            }
-            if (!(z)) {
+            if (args[i] instanceof String) {
                 obj = (String) args[i];
-            } else if (z) {
+            } else if (args[i] instanceof TextStrings) {
                 obj = ((TextStrings) args[i]).get(0).replace("\\\\n", "\\n");
             } else {
                 obj = args[i].toString();
@@ -78,6 +62,7 @@ public final class Language {
             return translated;
         }
     }
+
 
     public String getLanguageCode() {
         return this.languageCode;

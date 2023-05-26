@@ -1,7 +1,6 @@
 package org.nofs.utils;
 
 import dev.morphia.mapping.Mapper;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,6 +12,8 @@ import java.util.stream.Collectors;
 
 /* loaded from: org.nofs.jar:emu/org.nofs/utils/FileUtils.class */
 public final class FileUtils {
+    private static final Path DATA_USER_PATH = Path.of("./data");
+    private static final Path DATA_DEFAULT_PATH = Path.of("./data");
     public static void write(String dest, byte[] bytes) {
         Path path = Path.of(dest, new String[0]);
         try {
@@ -20,6 +21,18 @@ public final class FileUtils {
         } catch (IOException e) {
             org.nofs.sdkserver.getLogger().warn("Failed to write file: " + dest);
         }
+    }
+
+    public static Path getDataPath(String path) {
+        Path userPath = DATA_USER_PATH.resolve(path);
+        if (Files.exists(userPath)) return userPath;
+        Path defaultPath = DATA_DEFAULT_PATH.resolve(path);
+        if (Files.exists(defaultPath)) return defaultPath;
+        return userPath;  // Maybe they want to write to a new file
+    }
+
+    public static Path getDataUserPath(String path) {
+        return DATA_USER_PATH.resolve(path);
     }
 
     public static byte[] read(String dest) {

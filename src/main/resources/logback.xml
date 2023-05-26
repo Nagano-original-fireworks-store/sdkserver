@@ -23,11 +23,10 @@
     <logger name="org.reflections" level="OFF" />
     <logger name="org.eclipse.jetty" level="OFF" />
 
-    <logger name="org.nofs" level="${LOG_LEVEL}" />
+    <logger name="org.nofs.sdkserver" level="${LOG_LEVEL}" />
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="FILE" />
-        <appender-ref ref="SERVEREVENT" />
     </root>
 </Configuration>
