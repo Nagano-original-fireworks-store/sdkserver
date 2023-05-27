@@ -38,9 +38,12 @@ public class ConfigContainer {
 
     /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Dispatch.class */
     public static class Dispatch {
+
         public Region[] regions = {new Region()};
+//        public String defaultName = "Grasscutter";
         public sdkserver.ServerDebugMode logRequests = org.nofs.sdkserver.ServerDebugMode.NONE;
     }
+
 
     /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Encryption.class */
     public static class Encryption {
@@ -65,6 +68,17 @@ public class ConfigContainer {
         public Encryption encryption = new Encryption();
         public Policies policies = new Policies();
         public Files files = new Files();
+        public String defaultName = "Grasscutter";
+
+    }
+    public static class game{
+        public static String Name = "dev_client";
+        public static String Title = "NOFS";
+        public static String type = "DEV_PUBLIC";
+        public static int accessPort = 0;
+        public static String accessAddress = "127.0.0.1";
+        public static String Ip = "127.0.0.1";
+        public static int Port = 22141;
     }
 
     /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Language.class */
@@ -86,17 +100,22 @@ public class ConfigContainer {
 
     /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Region.class */
     public static class Region {
-        public String Name = "dev_client";
+        public static String Name = "dev_client";
         public String Title = "NOFS";
         public String type = "DEV_PUBLIC";
         public String DispatchUrl = "https://127.0.0.1:20001/query_cur_region";
 
     }
 
+
     /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Server.class */
     public static class Server {
+        public static sdkserver.ServerRunMode runMode = sdkserver.ServerRunMode.HYBRID;
         public HTTP http = new HTTP();
         public Dispatch dispatch = new Dispatch();
+        public game game = new game();
+
+
     }
 
     /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Structure.class */

@@ -1,5 +1,8 @@
 package org.nofs.config;
 
+
+import org.nofs.sdkserver;
+
 import java.nio.file.Path;
 import java.util.Locale;
 
@@ -11,8 +14,10 @@ public final class Configuration extends ConfigContainer {
     public static String DATA_FOLDER = org.nofs.sdkserver.config.folderStructure.data;
     public static Database DATABASE = org.nofs.sdkserver.config.databaseInfo;
     public static Account ACCOUNT = org.nofs.sdkserver.config.account;
-    public static HTTP HTTP_INFO = org.nofs.sdkserver.config.server.http;
+    public static HTTP HTTP_INFO = sdkserver.config.server.http;
+    public static game GAME_INFO = sdkserver.config.server.game;
     public static Dispatch DISPATCH_INFO = org.nofs.sdkserver.config.server.dispatch;
+    public static HTTP defaultName= sdkserver.config.server.http;
     public static Encryption HTTP_ENCRYPTION = org.nofs.sdkserver.config.server.http.encryption;
     public static Policies HTTP_POLICIES = org.nofs.sdkserver.config.server.http.policies;
     public static Files HTTP_STATIC_FILES = org.nofs.sdkserver.config.server.http.files;
