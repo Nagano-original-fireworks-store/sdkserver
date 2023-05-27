@@ -33,7 +33,12 @@ public final class RegionHandler implements Router {
                 org.nofs.sdkserver.getLogger().error("Region name already in use.");
                 return;
             }
-            RegionSimpleInfoOuterClass.RegionSimpleInfo identifier = RegionSimpleInfoOuterClass.RegionSimpleInfo.newBuilder().setName(region.Name).setTitle(region.Title).setType(region.type).setDispatchUrl(region.DispatchUrl).build();
+            RegionSimpleInfoOuterClass.RegionSimpleInfo identifier = RegionSimpleInfoOuterClass.RegionSimpleInfo.newBuilder()
+                    .setName(region.Name)
+                    .setTitle(region.Title)
+                    .setType(region.type)
+                    .setDispatchUrl(region.DispatchUrl)
+                    .build();
             usedNames.add(region.Name);
             servers.add(identifier);
         });
