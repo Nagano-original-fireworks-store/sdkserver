@@ -21,7 +21,7 @@ public final class RegionHandler implements Router {
     public void applyRoutes(Javalin javalin) {
         javalin.get("/query_region_list", RegionHandler::queryRegionList);
         // TODO 完成CUR
-//        javalin.get("/query_cur_region/{region}", RegionHandler::queryCurrentRegion);
+        //javalin.get("/query_cur_region/{region}", RegionHandler::queryCurrentRegion);
     }
 
     private static void queryRegionList(Context ctx) {

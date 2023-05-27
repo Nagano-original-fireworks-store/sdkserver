@@ -44,8 +44,8 @@ public class ConfigContainer {
 
     /* loaded from: org.nofs.jar:emu/org.nofs/config/ConfigContainer$Encryption.class */
     public static class Encryption {
-        public boolean useEncryption = true;
-        public boolean useInRouting = true;
+        public boolean useEncryption = false;
+        public boolean useInRouting = false;
         public String keystore = "./keystore.p12";
         public String keystorePassword = "123456";
     }

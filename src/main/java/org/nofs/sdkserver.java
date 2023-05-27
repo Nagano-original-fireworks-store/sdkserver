@@ -210,7 +210,7 @@ public final class sdkserver {
             } catch (UserInterruptException e3) {
                 if (!isLastInterrupted) {
                     isLastInterrupted = true;
-                    getLogger().info("Press Ctrl-C again to shutdown.");
+
                 } else {
                     Runtime.getRuntime().exit(0);
                 }
@@ -226,11 +226,11 @@ public final class sdkserver {
 
     private static void onInput(String input) {
 //        Console console = System.console();
-
-//        if (input != null && input.equalsIgnoreCase("\u0003")) {
-//            getLogger().info(Language.translate("messages.status.shutdown"));
-//            System.exit(0);
-//        }
+        boolean isLastInterrupted = false;
+        if (!isLastInterrupted) {
+            getLogger().info(Language.translate("messages.status.shutdown"));
+            System.exit(0);
+            ;}
         if (input.equals("stop")) {
             getLogger().info(Language.translate("messages.status.shutdown"));
             System.exit(0);
@@ -330,8 +330,7 @@ public final class sdkserver {
         }
     }
 
-    @Deprecated(forRemoval = true)
-    public static Gson getGsonFactory() {
+        public static Gson getGsonFactory() {
         return JsonUtils.getGsonFactory();
     }
 
