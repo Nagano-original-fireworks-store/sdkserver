@@ -70,10 +70,6 @@ jar {
         attributes 'Main-Class': 'org.nofs.Grasscutter'
     }
 
-    manifest {
-        attributes 'Main-Class': 'org.nofs.sdkserver'
-    }
-
     archiveBaseName = 'sdkserver'
     if (project.hasProperty('jarFilename')) {
         archiveFileName = "${jarFilename}.${archiveExtension}"

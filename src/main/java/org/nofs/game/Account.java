@@ -214,9 +214,10 @@ public class Account {
         if (this.permissions.contains("*") && this.permissions.size() == 1) {
             return true;
         }
-        List<String> permissions = Stream.of((Object[]) new List[]{this.permissions, Arrays.asList(Configuration.ACCOUNT.defaultPermissions)}).flatMap((v0) -> {
-            return v0.stream();
-        }).distinct().toList();
+        List<String> permissions = Stream.of(this.permissions, Arrays.asList(Configuration.ACCOUNT.defaultPermissions))
+                .flatMap(List::stream)
+                .distinct()
+                .toList();
         if (permissions.contains(permission)) {
             return true;
         }

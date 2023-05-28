@@ -2,6 +2,8 @@ package org.nofs.utils;
 
 import org.nofs.Grasscutter;
 import org.nofs.utils.FileUtils;
+
+import java.nio.file.Path;
 import java.security.KeyFactory;
 import java.security.PrivateKey;
 import java.security.PublicKey;
@@ -31,13 +33,19 @@ public final class Crypto {
         ENCRYPT_KEY = FileUtils.readResource("/keys/secretKey.bin");
         ENCRYPT_SEED_BUFFER = FileUtils.readResource("/keys/secretKeyBuffer.bin");
         try {
-            CUR_SIGNING_KEY = KeyFactory.getInstance("RSA").generatePrivate(new PKCS8EncodedKeySpec(FileUtils.readResource("/keys/SigningKey.der")));
+            CUR_SIGNING_KEY = KeyFactory.getInstance("RSA")
+                    .generatePrivate(new PKCS8EncodedKeySpec(FileUtils.readResource("/keys/SigningKey.der")));
+
             Pattern pattern = Pattern.compile("([0-9]*)_Pub\\.der");
-            for (Path path : (List) Objects.requireNonNull(FileUtils.getPathsFromResource("/keys/game_keys"))) {
+            for (Path path : FileUtils.getPathsFromResource("/keys/game_keys")) {
                 if (path.toString().endsWith("_Pub.der")) {
-                    Matcher m = pattern.matcher(path.getFileName().toString());
+
+                    var m = pattern.matcher(path.getFileName().toString());
+
                     if (m.matches()) {
-                        PublicKey key = KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(FileUtils.read(path)));
+                        var key = KeyFactory.getInstance("RSA")
+                                .generatePublic(new X509EncodedKeySpec(FileUtils.read(path)));
+
                         EncryptionKeys.put(Integer.valueOf(m.group(1)), key);
                     }
                 }

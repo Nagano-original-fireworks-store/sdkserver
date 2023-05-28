@@ -42,43 +42,20 @@ public final class Language {
     }
 
     public static String translate(String key, Object... args) {
-        String obj;
         String translated = Grasscutter.getLanguage().get(key);
+
         for (int i = 0; i < args.length; i++) {
-            int i2 = i;
-            String simpleName = args[i].getClass().getSimpleName();
-            boolean z = true;
-            switch (simpleName.hashCode()) {
-                case -1808118735:
-                    if (simpleName.equals("String")) {
-                        z = false;
-                        break;
-                    }
-                    break;
-                case -1053826955:
-                    if (simpleName.equals("TextStrings")) {
-                        z = true;
-                        break;
-                    }
-                    break;
-            }
-            switch (z) {
-                case false:
-                    obj = args[i];
-                    break;
-                case true:
-                    obj = ((TextStrings) args[i]).get(0).replace("\\\\n", "\\n");
-                    break;
-                default:
-                    obj = args[i].toString();
-                    break;
-            }
-            args[i2] = obj;
+            args[i] = switch (args[i].getClass().getSimpleName()) {
+                case "String" -> args[i];
+                case "TextStrings" -> ((TextStrings) args[i]).get(0).replace("\\\\n", "\\n");  // TODO: Change this to server language
+                default -> args[i].toString();
+            };
         }
+
         try {
             return translated.formatted(args);
         } catch (Exception exception) {
-            Grasscutter.getLogger().error("Failed to format string: " + key, (Throwable) exception);
+            Grasscutter.getLogger().error("Failed to format string: " + key, exception);
             return translated;
         }
     }
@@ -195,13 +172,11 @@ public final class Language {
         }, i2 -> {
             return i2;
         })));
-        public static final Object2IntMap<String> MAP_GC_LANGUAGES = new Object2IntOpenHashMap((Map) IntStream.range(0, ARR_GC_LANGUAGES.length).boxed().collect(Collectors.toMap(i -> {
-            return ARR_GC_LANGUAGES[i.intValue()];
-        }, i2 -> {
-            return i2;
-        }, i1, i22 -> {
-            return i1;
-        })));
+        public static final Object2IntMap<String> MAP_GC_LANGUAGES =  // Map "en-US": 0, "zh-CN": 1, ...
+                new Object2IntOpenHashMap<>(
+                        IntStream.range(0, ARR_GC_LANGUAGES.length)
+                                .boxed()
+                                .collect(Collectors.toMap(i -> ARR_GC_LANGUAGES[i], i -> i, (i1, i2) -> i1)));
         public String[] strings;
 
         public boolean equals(Object o) {

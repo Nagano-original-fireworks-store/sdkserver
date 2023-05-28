@@ -44,7 +44,6 @@ bin/
 .DS_Store
 ### sdk ###
 config.json
-data
 logs
 sdkserver-1.0.jar
 keys

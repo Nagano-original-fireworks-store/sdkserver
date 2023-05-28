@@ -24,7 +24,7 @@ public final class RegionHandler implements Router {
     private static void queryRegionList(Context ctx) {
         List<RegionSimpleInfoOuterClass.RegionSimpleInfo> servers = new ArrayList<>();
         List<String> usedNames = new ArrayList<>();
-        ArrayList<ConfigContainer.Region> configuredRegions = new ArrayList<>(List.of((Object[]) Configuration.DISPATCH_INFO.regions));
+        ArrayList<ConfigContainer.Region> configuredRegions = new ArrayList<>(List.of(Configuration.DISPATCH_INFO.regions));
         configuredRegions.forEach(region -> {
             if (usedNames.contains(region.Name)) {
                 Grasscutter.getLogger().error("Region name already in use.");
