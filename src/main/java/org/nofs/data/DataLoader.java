@@ -34,7 +34,7 @@ public class DataLoader {
             return new FileInputStream(Configuration.DATA(resourcePath));
         }
         if (useFallback) {
-            return FileUtils.readResourceAsStream("/defaults/data/" + resourcePath);
+            return FileUtils.readResourceAsStream("/data/" + resourcePath);
         }
         return null;
     }
@@ -101,7 +101,7 @@ public class DataLoader {
 
     public static void checkAllFiles() {
         try {
-            List<Path> filenames = FileUtils.getPathsFromResource("/defaults/data/");
+            List<Path> filenames = FileUtils.getPathsFromResource("/data/");
             if (filenames == null) {
                 Grasscutter.getLogger().error("We were unable to locate your default data files.");
             } else {
@@ -131,7 +131,7 @@ public class DataLoader {
                 }
             }
             Grasscutter.getLogger().info("Creating default '" + name + "' data");
-            FileUtils.copyResource("/defaults/data/" + name, filePath);
+            FileUtils.copyResource("/data/" + name, filePath);
         }
     }
 }
