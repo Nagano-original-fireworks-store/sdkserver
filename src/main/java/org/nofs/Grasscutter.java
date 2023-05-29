@@ -197,24 +197,27 @@ public final class Grasscutter {
     }
 
     public static void startConsole() {
-        getLogger().info(Language.translate("messages.status.done", new Object[0]));
         String input = null;
         boolean isLastInterrupted = false;
         while (true) {
             try {
-                input = consoleLineReader.readLine("Dispatch> ");
-            } catch (IOError e) {
-                getLogger().error("An IO error occurred.", (Throwable) e);
-            } catch (EndOfFileException e2) {
-                getLogger().info("EOF detected.");
-            } catch (UserInterruptException e3) {
+                input = consoleLineReader.readLine("> ");
+            } catch (UserInterruptException e) {
                 if (!isLastInterrupted) {
                     isLastInterrupted = true;
-                    getLogger().info("Press Ctrl-C again to shutdown.");
+                    Grasscutter.getLogger().info("Press Ctrl-C again to shutdown.");
+                    continue;
                 } else {
                     Runtime.getRuntime().exit(0);
                 }
+            } catch (EndOfFileException e) {
+                Grasscutter.getLogger().info("EOF detected.");
+                continue;
+            } catch (IOError e) {
+                Grasscutter.getLogger().error("An IO error occurred while trying to read from console.", e);
+                return;
             }
+
             isLastInterrupted = false;
             try {
                 onInput(input);
