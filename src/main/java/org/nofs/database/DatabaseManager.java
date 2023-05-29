@@ -54,10 +54,10 @@ public final class DatabaseManager {
         }
         try {
             int nextId = counter.getNextId();
-            getAccountDatastore().save((Datastore) counter);
+            getAccountDatastore().save(counter);
             return nextId;
         } catch (Throwable th) {
-            getAccountDatastore().save((Datastore) counter);
+            getAccountDatastore().save(counter);
             throw th;
         }
     }
