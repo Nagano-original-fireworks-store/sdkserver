@@ -43,7 +43,7 @@ public final class DatabaseHelper {
     }
 
     public static void saveAccount(Account account) {
-        DatabaseManager.getAccountDatastore().save((Datastore) account);
+        DatabaseManager.getAccountDatastore().save(account);
     }
 
     public static Account getAccountByName(String username) {

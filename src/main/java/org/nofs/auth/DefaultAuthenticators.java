@@ -50,7 +50,10 @@ public final class DefaultAuthenticators {
                         Grasscutter.getLogger().info(Language.translate("messages.dispatch.account.account_login_create_error", address));
                     } else {
                         successfulLogin = true;
-                        Grasscutter.getLogger().info(Language.translate("messages.dispatch.account.account_login_create_success", address, response.data.account.uid));
+                        if(response.data.account.uid != null) {
+                            Grasscutter.getLogger().info(Language.translate("messages.dispatch.account.account_login_create_success", address, response.data.account.uid));
+                        }
+
                     }
                 } else if (account != null) {
                     successfulLogin = true;
