@@ -14,6 +14,7 @@ import io.javalin.http.ContentType;
 import io.javalin.http.Context;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 import java.util.StringJoiner;
 
@@ -26,10 +27,167 @@ public final class AnnouncementsHandler implements Router {
         allRoutes(javalin, "/common/hk4e_global/announcement/api/getAnnList", AnnouncementsHandler::getAnnouncement);
         allRoutes(javalin, "/common/hk4e_global/announcement/api/getAnnContent", AnnouncementsHandler::getAnnouncement);
         allRoutes(javalin, "/hk4e_global/mdk/shopwindow/shopwindow/listPriceTier", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"suggest_currency\":\"USD\",\"tiers\":[]}}"));
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-version.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-zh-cn.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-zh-tw.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-en-us.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-de-de.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-es-es.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-fr-fr.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-id-id.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-it-it.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-ja-jp.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-ko-kr.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-pt-pt.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-ru-ru.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-th-th.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-tr-tr.json", AnnouncementsHandler::MI18N);
+        allRoutes(javalin, "/admin/mi18n/plat_oversea/m2020030410/m2020030410-vi-vn.json", AnnouncementsHandler::MI18N);
+        javalin.post("/hk4e_cn/combo/granter/api/compareProtocolVersion", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"modified\":true,\"protocol\":{\"id\":0,\"app_id\":4,\"language\":\"zh-cn\",\"user_proto\":\"\",\"priv_proto\":\"\",\"major\":38,\"minimum\":0,\"create_time\":\"0\",\"teenager_proto\":\"\",\"third_proto\":\"\",\"full_priv_proto\":\"\"}}}"));
         javalin.get("/hk4e/announcement/*", AnnouncementsHandler::getPageResources);
     }
 
-    private static void getAnnouncement(Context ctx) {
+    private static void MI18N (Context ctx) {
+        String data = "";
+        if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-version.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-version.json"));
+            } catch (Exception e) {
+                if (e.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-version.json'. \n" + e);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-zh-cn.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-zh-cn.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-zh-cn.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-zh-tw.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-zh-tw.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-zh-tw.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-en-us.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-en-us.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-en-us.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-de-de.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-de-de.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-de-de.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-es-es.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-es-es.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-es-es.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-fr-fr.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-fr-fr.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-fr-fr.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-id-id.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-id-id.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-id-id.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-it-it.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-it-it.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-it-it.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-ja-jp.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-ja-jp.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-ja-jp.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-ko-kr.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-ko-kr.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-ko-kr.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-pt-pt.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-pt-pt.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-pt-pt.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-ru-ru.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-ru-ru.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-ru-ru.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-th-th.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-th-th.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-th-th.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-tr-tr.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-tr-tr.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-tr-tr.json'. \n" + e2);
+                }
+            }
+        } else if (Objects.equals(ctx.endpointHandlerPath(), "/admin/mi18n/plat_oversea/m2020030410/m2020030410-vi-vn.json")) {
+            try {
+                data = FileUtils.readToString(DataLoader.load("m2020030410-vi-vn.json"));
+            } catch (Exception e2) {
+                if (e2.getClass() == IOException.class) {
+                    Grasscutter.getLogger().info("Unable to read file 'm2020030410-vi-vn.json'. \n" + e2);
+                }
+            }
+        } else {
+            ctx.result("{\"retcode\":404,\"message\":\"Unknown request path\"}");
+        }
+        if (data.isEmpty()) {
+            ctx.result("{\"retcode\":500,\"message\":\"Unable to fetch requsted content\"}");
+            return;
+        }
+        ctx.result(data.getBytes(StandardCharsets.UTF_8));
+    }
+
+    private static void getAnnouncement (Context ctx) {
         String data = "";
         if (Objects.equals(ctx.endpointHandlerPath(), "/common/hk4e_global/announcement/api/getAnnContent")) {
             try {

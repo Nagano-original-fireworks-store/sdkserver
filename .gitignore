@@ -46,3 +46,6 @@ bin/
 config.json
 logs
 sdkserver-1.0.jar
+/data
+/src/main/java/org/nofs/BuildConfig.java
+src/main/java/org/nofs/BuildConfig.java

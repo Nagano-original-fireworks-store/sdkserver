@@ -106,7 +106,7 @@ public class DataLoader {
                 Grasscutter.getLogger().error("We were unable to locate your default data files.");
             } else {
                 for (Path file : filenames) {
-                    String relativePath = String.valueOf(file).split("defaults[\\\\\\/]data[\\\\\\/]")[1];
+                    String relativePath = String.valueOf(file).split("data[\\\\\\/]")[1];
                     checkAndCopyData(relativePath);
                 }
             }

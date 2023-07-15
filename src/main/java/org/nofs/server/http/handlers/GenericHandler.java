@@ -4,7 +4,6 @@ import org.nofs.GameConstants;
 import org.nofs.config.Configuration;
 import org.nofs.server.http.Router;
 import org.nofs.server.http.objects.HttpJsonResponse;
-import org.nofs.server.http.objects.WebStaticVersionResponse;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 
@@ -23,7 +22,6 @@ public final class GenericHandler implements Router {
         allRoutes(javalin, "/sdk/upload", new HttpJsonResponse("{\"code\":0}"));
         javalin.post("/sdk/dataUpload", new HttpJsonResponse("{\"code\":0}"));
         allRoutes(javalin, "/perf/config/verify", new HttpJsonResponse("{\"code\":0}"));
-        javalin.get("/admin/mi18n/plat_oversea/*", new WebStaticVersionResponse());
         javalin.get("/status/server", GenericHandler::serverStatus);
     }
 
