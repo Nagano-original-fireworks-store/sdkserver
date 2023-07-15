@@ -89,7 +89,7 @@ public final class Grasscutter {
     }
 
     public static void main(String[] args) throws Exception {
-        Crypto.loadKeys();
+        //Crypto.loadKeys();
         if (StartupArguments.parse(args)) {
             System.exit(0);
         }
