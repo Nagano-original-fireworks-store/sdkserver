@@ -130,7 +130,7 @@ public class DataLoader {
                     }
                 }
             }
-            Grasscutter.getLogger().info("Creating default '" + name + "' data");
+            Grasscutter.getLogger().info("Creating default data");
             FileUtils.copyResource("/data/" + name, filePath);
         }
     }
