@@ -28,6 +28,8 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+    - name: chmod
+      run: chmod 777 ./gradlew
     - name: Build
       run: ./gradlew jar
     - name: Upload a Build Artifact
